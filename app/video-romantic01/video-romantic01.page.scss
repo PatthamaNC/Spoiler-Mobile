@@ -1,0 +1,78 @@
+ion-content {
+    --ion-background-color: linear-gradient(to right,#d3ebf8, #d3ebf8,#d3ebf8 );
+}
+
+// รูปปกภาพยนตร์
+#img {
+    height: 50%;
+    width: 50%;
+    
+}
+
+
+ion-img {
+    border-radius: 20px;
+}
+
+ion-item {
+
+    margin-left: -15px;
+}
+
+// icon เล่นวิดีโอ
+#icon {
+    size: 1400px;
+    position: absolute;
+    width: 30px;
+    height: 38px;
+    left: 336.7px;
+    top: 40px;
+
+}
+
+// ชื่อภาพยนตร์
+#text01 {
+    position: absolute;
+    width: 88px;
+    height: 22px;
+    left: 195px;
+    top: 50px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+//จัดกึ่งกลาง
+.ion-text-center {
+    text-align: center;
+  }
+// ชื่อหมวดหมู่าภาพยนตร์ บนสุด
+#text02 {
+    position: absolute;
+    margin-top: 28px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 19px;
+    margin-left: 95px;
+    color: #0c4a96;
+    font-weight: bold;
+
+}
+// ปุ่มกลับ
+#icon_back{
+    font-size: 25px;
+    margin-left: 12px;
+    margin-top: 30px;
+    color:#012661;
+}
+
+ion-grid{
+    margin-top: 30px;
+}
+.label_icon{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-top: 31px;
+    margin-left: -2.5px;
+    font-size: 16px;
+    color:#012661;
+    position: absolute;
+}

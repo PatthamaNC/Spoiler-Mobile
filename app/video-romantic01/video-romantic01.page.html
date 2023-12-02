@@ -1,0 +1,67 @@
+<!-- <ion-content [fullscreen]="true">
+  <ion-icon id="icon2" size="large" name="chevron-back-outline" [routerLink]="['/main-page']"></ion-icon>
+  <ion-header collapse="condense">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+      rel="stylesheet" />
+  </ion-header>
+  <ion-text id="text02"> ภาพยนตร์แอ็กชั่น</ion-text>
+
+  <ion-grid >
+    <ion-row *ngFor="let movie of videoactions">
+      <ion-item >
+      <ion-col>
+        
+          <ion-label>
+            <ion-img id="img" [src]="movie.action_img"
+              [routerLink]="['/video-action02/', movie.videoactionID]"></ion-img><ion-icon id="icon"
+              [routerLink]="['/video-action02/', movie.videoactionID]" name="caret-forward-circle-outline"></ion-icon>
+            <ion-text id="text01">{{movie.action_name}}</ion-text>
+
+          </ion-label>     
+      </ion-col>
+      </ion-item>
+    </ion-row>
+  </ion-grid>
+</ion-content> -->
+
+
+  
+<ion-header collapse="condense">
+  <ion-icon id="icon_back"  name="chevron-back-outline" [routerLink]="['/main-page/main-page-two']"></ion-icon>
+  <label [routerLink]="['/main-page/main-page-two']" class="label_icon">หน้าหลัก</label>
+ 
+
+  <ion-text id="text02"> ภาพยนตร์โรแมนติก</ion-text>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+    rel="stylesheet" />
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+<ion-grid >
+  <ion-row *ngFor="let video of videos">
+    <ion-item >
+    <ion-col>
+        <ion-label>
+          <ion-img 
+          [routerLink]="['/video-romantic02/', video.videosID]"
+          id="img" [src]="video.img"
+            ></ion-img>
+            <ion-icon id="icon"
+            name="caret-forward-circle-outline"></ion-icon>
+          <ion-text id="text01">{{video.name}}</ion-text>
+        </ion-label>     
+    </ion-col>
+    </ion-item>
+  </ion-row>
+</ion-grid>
+  
+
+
+</ion-content>

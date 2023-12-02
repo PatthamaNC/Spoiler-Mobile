@@ -1,0 +1,51 @@
+ <ion-header collapse="condense">
+  <ion-icon id="icon_back"  name="chevron-back-outline" [routerLink]="['/tabs-user01/tabs-user02']"></ion-icon>
+  <label [routerLink]="['/tabs-user01/tabs-user02']" class="label_icon">หน้าหลัก</label>
+ 
+  <ion-text id="text02"> ภาพยนตร์โรแมนติก</ion-text>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+      rel="stylesheet" />
+  </ion-header>
+<ion-content [fullscreen]="true">
+  <ion-grid >
+    <ion-row >
+      <ion-item >
+      <ion-col>
+        
+          <ion-label>
+            <ion-img id="img" [src]="videoromantic.romantic_img"
+              [routerLink]="['/video-romantic-user02/', videoromantic.videoromanticID ]"></ion-img><ion-icon id="icon"
+              [routerLink]="['/video-romantic-user02/', videoromantic.videoromanticID ]" name="caret-forward-circle-outline"></ion-icon>
+            <ion-text id="text01">{{videoromantic.romantic_name}}</ion-text>
+
+          </ion-label>     
+      </ion-col>
+      </ion-item>
+    </ion-row>
+  </ion-grid>
+
+
+  <!-- <ion-grid >
+    <ion-row >
+      <ion-item >
+      <ion-col>
+        
+          <ion-label>
+            <ion-img id="img" [src]="videoaction.action_img"
+              [routerLink]="['/video-action-user02/', videoaction.videoactionID]"></ion-img>
+              <ion-icon id="icon"
+              [routerLink]="['/video-action-user02/', videoaction.videoactionID]" name="caret-forward-circle-outline"></ion-icon>
+            <ion-text id="text01">{{videoaction.action_name}}</ion-text>
+  
+          </ion-label>     
+      </ion-col>
+      </ion-item>
+    </ion-row>
+  </ion-grid> -->
+
+
+</ion-content>
