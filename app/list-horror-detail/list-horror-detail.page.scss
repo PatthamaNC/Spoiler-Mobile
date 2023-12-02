@@ -1,0 +1,264 @@
+
+.content {
+    --ion-background-color: linear-gradient(to right,#E4F0F6, #ECF3FF,#ebf5fb );
+
+}
+
+
+// หมวดหมู่
+#text02 {
+    position: absolute;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin: auto;
+    color: #595f65;
+    font-size: 15.5px;
+    margin-left: 400px;
+    margin-top: -90px;
+    
+}
+
+// เนื้อหาสปอยล์
+#text03 {
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin: auto;
+    font-size: 16px;
+    margin-left: 80px;
+}
+// ชื่อภาพยนตร์
+#text04 {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 21px;
+    margin-top: -32px;
+    font-weight: bold;
+    color: #072952;
+}
+
+// username ผู้อัพโหลดภาพยนตร์
+#text05 {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -85px;
+    margin-left: 80px;
+}
+
+// ปกภาพยนตร์
+#thumbnail {
+    margin: auto;
+    height: 220px;
+    width: 330px;
+    // --size: 250px;
+    --border-radius: 14px;
+}
+
+// โปรไฟล์ผู้อัพโหลดภาพยนตร์
+#img {
+//    border-radius: 50px;
+   width: 330px;
+   height: 330px;
+   margin-top: -70px;
+    margin-left: 27px;
+}
+
+//ดูเพิ่มเติม
+.text{
+    font-family: 'Noto Sans Thai', sans-serif;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: -28px;
+    font-size: 15px;
+    color: #595f65;
+}
+
+// หมวดหมู่
+#text22{
+    position: absolute;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin: auto;
+    font-size: 16px;
+    margin-left: 250px;
+    margin-top: -50px;
+}
+ion-modal{
+    --ion-background-color: #ebeff672;
+}
+// พื้นหลัง
+.ion-padding{
+    --ion-background-color: linear-gradient(to right,#E4F0F6, #ECF3FF,#ebf5fb );
+}
+
+
+
+// หมวดหมู่ นักแสดง ผู้กำกับ
+#label11{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 18px;
+    color: #051c37;
+}
+
+// icon ส่งความคิดเห็น
+#icon03{
+    margin-left: 10px;
+    color: #134e96;
+   
+}
+
+// icon report spoiler
+.icon02{
+    font-size: 25px;
+    color: #393737da;
+}
+// icon detele comment
+.icon04{
+    font-size: 25px;
+    color: tomato;
+}
+// icon edit comment FDE304
+.icon05{
+    font-size: 25px;
+    color: #FDE304;
+}
+
+// input เขียนความคิดเห็น
+ion-input{
+    border: 1.5px solid #a5a5a5;
+    border-radius: 15px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    background-color: #F2EFEF;
+    padding: 10px;
+    border-radius: 50px;
+    stroke-linecap: round;
+    
+}
+
+// message=ความคิดเห็นที่ผู้ใช้แสดงความคิดเห็น
+#p{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 15px;
+    color: #302f2f;
+}
+
+// username ผู้ใช้ที่แสดงความคิดเห็น
+#text100{
+    font-family: 'Noto Sans Thai', sans-serif;
+    
+}
+
+// alert report comment
+ion-alert{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+//จัดกึ่งกลาง
+.ion-text-center {
+    text-align: center;
+}
+#label02{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #062d5c;
+}
+// edit ภาพยนตร์
+#icon_list{
+    position: absolute;
+    font-size: 25.5px;
+    position: absolute;
+    margin-left: 302px;
+    margin-top: 25px;
+    
+}
+.icon_list{
+    position: absolute;
+    font-size: 25px;
+    position: absolute;
+    margin-left: 310px;
+    margin-top: 25px;
+}
+
+ion-modal{
+    backdrop-filter: blur(10px);
+    background-color: #e4f0f64a;
+}
+// header เบลอ
+
+ion-header{
+    backdrop-filter: blur(10px);
+    background-color: #e4f0f6c8;
+}
+
+ion-conter{
+    --ion-background-color: linear-gradient(to right,#d3ebf8, #d3ebf8,#d3ebf8 );
+}
+
+#item{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+.item{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+ion-popover{
+    backdrop-filter: blur(3px);
+    background-color: #e0e8ea86;
+}
+#icon_edit02{
+    margin-left: 45px;
+    color: rgb(223, 223, 15);
+}
+#icon_detele2{
+    color: red;
+    margin-left: 57px;
+}
+// ปุ่มกลับ
+#icon_back{
+    font-size: 25px;
+    margin-left: 12px;
+    margin-top: 30px;
+    color:#012661;
+}
+.label_icon{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-top: 31px;
+    margin-left: -2.5px;
+    font-size: 16px;
+    position: absolute;
+    color:#012661;
+}
+.TEST{
+    --ion-background-color: linear-gradient(to right,#E4F0F6, #ECF3FF,#ebf5fb ); 
+}
+.icon-flag{
+    color: #1e4d93;
+    position: absolute;
+    margin-left: 335px;
+    margin-top: -100px;
+}
+// ปุ่มความคิดเห็น
+.button002 {
+    font-family: 'Noto Sans Thai', sans-serif;
+    background-color: #1e4d93;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width: 315px;
+    height: 48px;
+    margin-left: 30px;
+    border-radius: 30px;
+    border: 50px;
+    top: 700px;
+}
+.PicMember{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+}
+ion-footer{
+    backdrop-filter: blur(10px);
+    background-color: #e4f0f696;
+}
+ion-button {
+    font-family: 'Noto Sans Thai', sans-serif;
+}

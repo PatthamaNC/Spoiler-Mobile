@@ -1,0 +1,69 @@
+ion-content {
+    --ion-background-color: linear-gradient(to right,#d3ebf8, #d3ebf8,#d3ebf8 );
+}
+ion-label{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-left: 30px;
+    padding: 12px;
+    border-radius: 50px;
+    stroke-linecap: round;
+    font-size: 17.5px;
+   
+}
+
+ion-input{
+    
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 17px;
+    margin-left: -85px;
+    width: 320px;
+    height: 45px;
+    left: 120px;
+    // background: #D9D9D9;
+    background: #ffffff;
+    color: #2e4050;
+
+    border-radius: 16px;
+    
+}
+ion-button {
+    width: 150px;
+    --background-color: #1e4d93;
+    // --background: linear-gradient(to right, #48C3EB  , #718EDD);
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-left: -80px;
+    
+    position: absolute;
+}
+ion-title {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 21px;
+    margin-top: 11.5px;
+}
+ion-avatar{
+    margin: auto; height: 120px; width: 120px;
+}
+#camera{
+    width: 36px;
+    top: 23%;
+    position: absolute;
+    margin-left: 215px;
+}
+ion-alert{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+// ปุ่มกลับ
+#icon_back{
+    font-size: 25px;
+    margin-left: 12px;
+    margin-top: 30px;
+    color:#012661;
+}
+.label_icon{
+    color:#012661;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-top: 31px;
+    margin-left: -2.5px;
+    font-size: 16px;
+    position: absolute;
+}

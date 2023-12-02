@@ -1,0 +1,63 @@
+
+  <ion-header collapse="condense">
+    <ion-icon id="icon_back"  name="chevron-back-outline" [routerLink]="['/profile-two']"></ion-icon>
+    <label [routerLink]="['/profile-two']" class="label_icon">ย้อนกลับ</label>
+   
+    <ion-title style="color: #293556;" >แก้ไขโปรไฟล์</ion-title><br>
+
+    <!-- <ion-icon size="large" name="chevron-back-circle-outline" [routerLink] = "['/profile-two']"></ion-icon> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap" rel="stylesheet"/>
+    <!-- <ion-toolbar>
+      <ion-title style="color: #293556;" >แก้ไขโปรไฟล์</ion-title><br>
+    </ion-toolbar> -->
+  </ion-header>
+  <ion-content [fullscreen]="true">
+  <style>
+    .text-center{
+      text-align: center;
+    }
+  </style>
+<br><br><br>
+  <ion-avatar>
+      <ion-img  (click)="selectImage()" [src]="member.profile_pic"></ion-img>
+  </ion-avatar>
+ <img src="../assets/pic/camera.png" id="camera">
+<br>
+
+  <form action="" [formGroup]="loginForm" (ngSubmitForm)="submitForm()">
+
+    <ion-label position="floating">ชื่อ</ion-label>
+    <ion-input formControlName="fname" [(ngModel)]="member.fname"></ion-input><br>
+    <div *ngIf="this.loginForm.controls?.fname.touched && this.loginForm.controls?.fname.invalid">
+      <div class="error ion-padding" *ngIf="errorControl.fname.errors?.required" id="errorPassword">
+        <ion-text id="text03" color="danger">กรุณากรอกชื่อ!</ion-text>
+      </div>
+    </div>
+
+
+    <ion-label position="floating">นามสกุล</ion-label>
+    <ion-input formControlName="lname" [(ngModel)]="member.lname"></ion-input><br>
+    <div *ngIf="this.loginForm.controls?.lname.touched && this.loginForm.controls?.lname.invalid">
+      <div class="error ion-padding" *ngIf="errorControl.lname.errors?.required" id="errorPassword">
+        <ion-text id="text03" color="danger">กรุณากรอกชื่อ!</ion-text>
+      </div>
+    </div>
+
+    <br><br>
+
+
+  
+ <div class="text-center"><ion-button [disabled]="!loginForm.valid" id="present-alert" shape="round"  (click)="onClickUpdateButton()" >บันทึกข้อมูล</ion-button></div> 
+
+</form>
+ 
+  <ion-alert
+      trigger="present-alert"
+      header="ต้องบันทึกข้อมูล ใช่หรือไม่!"
+      [buttons]="alertButtons"
+    ></ion-alert>
+
+
+</ion-content>

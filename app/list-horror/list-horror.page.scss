@@ -1,0 +1,44 @@
+#subtitle{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 16px;
+    margin-top: -10px;
+    margin-left: 100px;
+}
+// ปุ่มกลับ
+#icon_back{
+    font-size: 25px;
+    margin-left: 12px;
+    margin-top: 30px;
+    color:#012661;
+}
+.label_icon{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-top: 31px;
+    margin-left: -2.5px;
+    font-size: 16px;
+    position: absolute;
+    color:#012661;
+}
+#Action{
+    font-size: 21px;
+    color: #012661;
+    margin-left: 78px;
+    margin-top: 24px;
+    font-weight: bold;
+    position: absolute;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+ion-card{
+    height: 220px;
+    width: 320px;
+    margin-left: 30px;
+    --ion-background-color: white;
+}
+ion-header{
+    backdrop-filter: blur(10px);
+    background-color: #e4f0f6c8;
+}
+ion-content{
+    --ion-background-color: linear-gradient(to right,#E4F0F6, #ECF3FF,#ebf5fb );
+
+}

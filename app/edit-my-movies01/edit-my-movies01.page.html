@@ -1,0 +1,93 @@
+<ion-header >
+  
+      <ion-icon id="black"  name="chevron-back-outline" [routerLink]="['/my-movies']"></ion-icon><label class="label_icon">ย้อนกลับ</label>
+      <div class="ion-text-center" style="color: #131f3f;" id="text05">แก้ไขภาพยนตร์</div>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+      rel="stylesheet" />
+      <br>
+</ion-header>
+
+<ion-content >
+  <!-- <ion-header>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+      rel="stylesheet" />
+  </ion-header> -->
+
+  <!-- <ion-icon id="black" size="large" name="chevron-back-outline" [routerLink]="['/my-movies']"></ion-icon> -->
+
+    <!-- <div class="ion-text-center" id="text05">แก้ไขภาพยนตร์</div> -->
+    <br>
+    <br>
+
+
+    <ion-text id="text01" position="floating">ชื่อภาพยนตร์</ion-text>
+    <ion-input id="input02" [(ngModel)]="mymovie.spoiler_name"></ion-input><br>
+
+    <ion-text class="text02">ประเภทภาพยนตร์</ion-text>
+    <!-- <ion-input id="input02" [(ngModel)]="mymovie.spoiler_category"></ion-input> -->
+    <ion-select [(ngModel)]="mymovie.spoiler_category" label-placement="floating"   placeholder="">
+      <ion-select-option value="แอ็คชั่น">แอ็กชัน</ion-select-option>
+      <ion-select-option value="โรแมนติก">โรแมนติก</ion-select-option>
+      <ion-select-option value="การ์ตูน">การ์ตูน</ion-select-option>
+      <ion-select-option value="สยองขวัญ">สยองขวัญ</ion-select-option>
+    </ion-select>
+    
+    
+    
+    <br>
+
+
+
+
+
+    <!-- <ion-input id="input" [(ngModel)]="spoiler.spoiler_category"></ion-input>
+    <ion-select  label-placement="floating" fill="outline" placeholder="">
+      <ion-select-option value="แอ็คชั่น">แอ็คชั่น</ion-select-option>
+      <ion-select-option value="โรแมนติก">โรแมนติก</ion-select-option>
+      <ion-select-option value="การ์ตูน">การ์ตูน</ion-select-option>
+      <ion-select-option value="สยองขวัญ">สยองขวัญ</ion-select-option>
+    </ion-select>
+    <br><br> -->
+
+
+    <ion-text id="text03" position="floating">นักแสดง</ion-text>
+    <ion-input id="input02" [(ngModel)]="mymovie.actor"></ion-input><br>
+
+    <ion-text id="text03" position="floating">ผู้กำกับ</ion-text>
+    <ion-input id="input02" [(ngModel)]="mymovie.director"></ion-input><br>
+
+    <ion-text id="text03" position="floating">เนื้อหาภาพยนตร์</ion-text>
+    <ion-textarea id="textarea" [(ngModel)]="mymovie.spoiler_details"></ion-textarea><br>
+    <br><br><br><br><br><br><br>
+
+    <ion-text id="text04">รูปภาพหน้าปก</ion-text>
+    <ion-thumbnail>
+      <ion-img (click)="selectImage()" [src]="mymovie.spoiler_img"></ion-img>
+    </ion-thumbnail>
+    <br>
+
+    <ion-button id="present-alert-save" class="A" shape="round" >บันทึก</ion-button>
+
+      <ion-alert
+    trigger="present-alert"
+    header="คุณต้องการลบใช่หรือไม่!"
+    [buttons]="alertInputsSS"
+  ></ion-alert>
+
+  <ion-alert
+  trigger="present-alert-save"
+  header="คุณต้องการบันทึกใช่หรือไม่!"
+  [buttons]="alertButtonsSave"
+></ion-alert>
+<br>
+</ion-content>
+
+<!-- (click)="onClickDeleteButton()" 
+(click)="onClickSaveEditButton(mymovie)"-->

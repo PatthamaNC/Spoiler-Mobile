@@ -1,0 +1,23 @@
+<ion-header >
+  <ion-icon id="icon_back" name="chevron-back-outline" [routerLink]="['/main-page/list-spoiler']"></ion-icon>
+  <label [routerLink]="['/main-page/list-spoiler']" class="label_icon">ย้อนกลับ</label>
+  <ion-label id="Action">ภาพยนตร์การ์ตูน</ion-label>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+    rel="stylesheet" />
+</ion-header>
+
+<ion-content >
+
+  <ion-row *ngFor="let spoiler of listspoilers">
+    <ion-col>
+    <ion-card>
+      <img [routerLink]="['/list-cartoon-detail/', spoiler.spoilerID]" id="img" [src]="spoiler.spoiler_img" />
+      <ion-card-header>
+        <ion-card-subtitle id="subtitle">{{spoiler.spoiler_name}}</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

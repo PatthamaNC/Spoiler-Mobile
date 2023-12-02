@@ -1,0 +1,220 @@
+ion-content {
+  --ion-background-color: linear-gradient(to right,#d3ebf8, #d3ebf8,#d3ebf8 );
+}
+  .A {
+  // --border-radius: 50px;
+  //   --left: 80px;
+  //   position: absolute;
+  // --background: #0a18b6;
+  // font-size: 16.5px;
+  // font-family: 'Noto Sans Thai', sans-serif;
+  --background-color:#012661;
+  color: white;
+  // --background: linear-gradient(to right, #48C3EB  , #718EDD);
+  font-family: 'Noto Sans Thai', sans-serif;
+  margin-left: 120px;
+  width: 150px; 
+  }
+.B{
+  margin-left: 70px;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-size: 16.5px;
+  --background: #DD4470;
+  border-radius: 18.5px;
+}
+
+.input{
+    background: #FFFFFF;
+    border: 1.5px solid #1b74e4;
+    border-radius: 6px;
+    width: 300px;
+    height: 35px;
+    left: 30px;
+    margin-left: 15px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    background-color: #ffffff;
+    padding: 11px;
+  }
+
+  
+#input{
+  background: #FFFFFF;
+  border: 1.5px solid #1b74e4;
+  border-radius: 6px;
+  width: 300px;
+  height: 35px;
+  left: 30px;
+  margin-left: 15px;
+  font-family: 'Noto Sans Thai', sans-serif;
+  background-color: #ffffff;
+  padding: 11px;
+}
+#input11{
+  background: #FFFFFF;
+  border: 1.5px solid #1b74e4;
+  border-radius: 6px;
+  margin: 0;
+  left: 40px;
+  padding: 3px;
+  width: 300px;
+  height: 35px;
+  font-size: 18px;
+  line-height: 16px;
+  padding: 11px;
+}
+// ion-select {
+//   background: #FFFFFF;
+//   border: 1.5px solid #1b74e4;
+//   border-radius: 6px;
+//   margin: 0;
+//   left: 40px;
+//   padding: 3px;
+//   width: 300px;
+//   height: 35px;
+//   font-size: 18px;
+//     line-height: 16px;
+//   padding: 11px;
+// }
+
+ion-select {
+  background: #e6e5e5;
+  border: 2px solid #e6e5e5;
+
+  width: 300px;
+  height: 35px;
+  // left: 20px;
+  margin-left: 46px;
+  font-family: 'Noto Sans Thai', sans-serif;
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+
+
+}
+ion-thumbnail {
+  --size: 185px;
+  --border-radius: 14px;
+  width: 300px;
+  margin: auto;
+  border: 1.5px solid #e6e5e5;
+  background-color: #ffffff;
+}
+#input02{
+  background: #e6e5e5;
+  border: 2px solid #e6e5e5;
+  width: 300px;
+  height: 35px;
+  left: 20px;
+  margin-left: 27px;
+  font-family: 'Noto Sans Thai', sans-serif;
+  background-color: #ffffff;
+  padding: 12px;
+  font-size: 17.5px;
+}
+
+.input02{
+  background: #FFFFFF;
+  border: 1.5px solid #1b74e4;
+  width: 300px;
+  height: 35px;
+  left: 30px;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-left: 15px;
+  font-family: 'Noto Sans Thai', sans-serif;
+  background-color: #ffffff;
+  padding: 12px;
+}
+
+#text01{
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.text02{
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-size: 20px;
+  margin-left: 50px;
+}
+#text03{
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-size: 20px;
+  margin-left: 50px;
+}
+#text04{
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-size: 20px;
+  margin-left: 50px;
+}
+#text05{
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  // margin-left: 110px;
+  margin-top: -35px;
+  // color: #293556;
+}
+ion-select {
+  font-family: 'Noto Sans Thai', sans-serif;
+
+}
+ion-select-option{
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+// เนื้อหาภาพยนตร์
+#textarea {
+  background-color: #ffffff;
+  position: absolute;
+  width: 300px;
+  height: 120px;
+  left: 130px;
+  margin-left: -90px;
+  border: 1.5px solid #e6e5e5;
+  padding: 12px;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-size: 17.5px;
+}
+ion-alert{
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+//จัดกึ่งกลาง
+.ion-text-center {
+  text-align: center;
+}
+// ย้อนกลับ
+#black{
+  font-size: 25px;
+    margin-left: 12px;
+    margin-top: 30px;
+    color:#012661;
+}
+ion-input{
+  border-radius: 10px;
+}
+ion-textarea{
+  border-radius: 10px;
+}
+// ion-toolbar{
+//   backdrop-filter: blur(10px);
+
+// เบลอ
+ion-header{
+  backdrop-filter: blur(5px);
+  background-color: #d3ebf8;
+}
+.label_icon{
+  font-family: 'Noto Sans Thai', sans-serif;
+  margin-top: 31px;
+  margin-left: -2.5px;
+  font-size: 16px;
+  position: absolute;
+  color:#012661;
+}
+
+
+
+
+
+
+

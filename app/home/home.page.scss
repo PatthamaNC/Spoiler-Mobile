@@ -1,0 +1,86 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #4C5AA6;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.p{
+  font-family: 'Noto Sans Thai', sans-serif;
+ 
+
+}
+
+  ion-content{
+    --ion-background-color: linear-gradient(to right,#d3ebf8, #d3ebf8,#d3ebf8 );
+  } 
+  label{
+    
+  color: #CC184E;
+  }
+button {
+    // background-color: linear-gradient(to right, #48C3EB  , #718EDD);
+     font-family: 'Noto Sans Thai', sans-serif;
+     color: #ffffff;
+     width: 142px;
+     height: 50px;
+     font-size: 16px;
+     background-color: #1e4d93;
+     border-radius: 25px;
+}
+ion-label  {
+  color: #CC184E;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+img{
+  
+  margin-top: 130px;
+}
+#MOVIES{
+  position: absolute;
+  font-family: 'Tilt Neon', sans-serif;
+  font-size: 33px;
+  margin-left: 60px;
+  margin-top: 80px;
+  color: #072952;
+  font-weight: bold;
+}
+#label_password{
+  position: absolute;
+  margin-left: 130px;
+  margin-top: -5px;
+}
+#RE{
+  margin-top: 90px;
+  margin-left: 120px;
+}
+#LN{
+    position: absolute;
+  margin-left: 120px;
+  margin-top: 50px;
+}
+#AND{
+  position: absolute;
+  margin-top: 85px;
+  margin-left: 180px;
+}
+

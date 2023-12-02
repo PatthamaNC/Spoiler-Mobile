@@ -1,0 +1,33 @@
+
+
+  <ion-header collapse="condense">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+  </ion-header>
+<ion-content [fullscreen]="true">
+  
+  <ion-label id="MOVIES">The Movies Spoiler</ion-label>
+    <img src="../assets/pic/logo03.png" width="250" height="250" style="margin-left: 70px; "><br>
+   
+  <button id="LN"  shape="round"
+   (click) = "conclick()"
+    >เข้าสู่ระบบ</button><br>
+
+    <ion-label id="AND">หรือ</ion-label><br>
+    <button id="RE" shape="round" [routerLink] = "['/register-member']"
+    >สมัครสมาชิก</button><br><br>
+
+    <ion-label id="label_password" style="font-size: 16px; " (click)="OnclickforgotPassword()"><u>ลืมรหัสผ่านใช่หรือไม่ ?</u></ion-label><br><br><br><br><br><br><br><br><br><br><br><br>
+
+   <ion-label style="margin-left: 100px;" id="label01" color="medium">
+    รับชมตัวอย่างภาพยนตร์ </ion-label> 
+
+    <ion-label (click)="oncilckCilck()"><b>
+     คลิก </b></ion-label  >
+
+</ion-content>
