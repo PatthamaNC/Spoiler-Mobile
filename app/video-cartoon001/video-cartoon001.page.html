@@ -1,0 +1,33 @@
+
+  <ion-header collapse="condense">
+    <ion-icon id="icon_back"  name="chevron-back-outline" [routerLink]="['/main-page/main-page-two']"></ion-icon>
+    <label [routerLink]="['/main-page/main-page-two']" class="label_icon">หน้าหลัก</label>
+  
+  <ion-text id="text02"> ภาพยนตร์การ์ตูน</ion-text>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+      rel="stylesheet" />
+  </ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-grid >
+    <ion-row *ngFor="let video of videos">
+      <ion-item >
+      <ion-col>
+          <ion-label>
+            <ion-img id="img"
+            [routerLink]="['/video-cartoon002/', video.videosID]"
+            [src]="video.img"
+              ></ion-img>
+              <ion-icon id="icon"
+              name="caret-forward-circle-outline"></ion-icon>
+            <ion-text id="text01">{{video.name}}</ion-text>
+          </ion-label>     
+      </ion-col>
+      </ion-item>
+    </ion-row>
+  </ion-grid>
+</ion-content>

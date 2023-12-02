@@ -1,0 +1,68 @@
+
+
+  <ion-header class="header">
+    <!-- <ion-icon size="large" name="chevron-back-outline" [routerLink]="['/video-action-user01']"></ion-icon> -->
+    <ion-icon id="icon_back"  name="chevron-back-outline" [routerLink]="['/video-action-user01']"></ion-icon>
+    <label [routerLink]="['/video-action-user01']" class="label_icon">ย้อนกลับ</label>
+      <div  class="ion-text-center" id="text04">{{videoaction.action_name}}</div>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+      rel="stylesheet" />
+  </ion-header>
+  <ion-content class="ion-padding">
+
+
+  <br><br>
+
+
+
+  <video 
+  width="100%" 
+  height="25%" 
+  controls
+    id="video01" 
+    [src]="videoaction.video_action"
+    type="video/mp4"
+    #videoPlayer
+    (cilck)="toggleVideo()">
+  </video><br><br>
+
+  <ion-avatar>
+    <ion-img src="../assets/pic/profile12.png"></ion-img>
+  </ion-avatar>
+  <ion-text id="textAdmin">Admin </ion-text><br>
+  
+  <!-- <ion-icon class="icon-flag" size="large" id="present-alert"  name="flag"></ion-icon><br>
+  <ion-alert
+    trigger="present-alert"
+    header="คุณยังไม่ได้สมัครสมาชิก ใช่หรือไม่!"
+    [buttons]="alertButtons"
+  ></ion-alert> -->
+
+<ion-text id="text00">หมวดหมู่ : {{videoaction.action_category}}</ion-text><br>
+<ion-text class="text02" id="open-modal">ดูเพิ่มเติม...</ion-text>
+
+
+<ion-text id="subtitles"> {{videoaction.action_details}} </ion-text><br><br><br>
+  <ion-modal #modal trigger="open-modal" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]">
+    <ng-template>
+      <ion-content><br>
+        <div class="ion-text-center"> <ion-label id="label02">ข้อมูลเพิ่มเติม</ion-label></div>
+        <ion-list lines="none">
+          <ion-item>
+            <ion-label id="label11">หมวดหมู่ : {{videoaction.action_category}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label id="label11">นักแสดง : {{videoaction.actor}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label id="label11">ผู้กำกับ : {{videoaction.director}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+
+</ion-content>
