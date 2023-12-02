@@ -1,0 +1,106 @@
+
+  <ion-header collapse="condense">
+    <ion-icon id="icon_back"  name="chevron-back-outline" [routerLink]="['/home']"></ion-icon>
+    <label [routerLink]="['/home']" class="label_icon">ย้อนกลับ</label>
+   
+    <br><br>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+      rel="stylesheet" />
+      <ion-label id="register"><b>สมัครสมาชิก</b></ion-label>
+  </ion-header>
+<ion-content [fullscreen]="true">
+  <style>
+    .text-center {
+      text-align: center;
+    }
+  </style><br><br>
+  <!-- <ion-label id="register">สมัครสมาชิก</ion-label><br> -->
+
+  <!-- <ion-avatar>
+  <ion-img  (click)="selectImage()" [src]="member.profile_pic"></ion-img>
+</ion-avatar>
+<img src="../assets/pic/camera.png" id="camera"> -->
+<img src="../assets/pic/camera.png" id="camera">
+<br>
+
+  <ion-avatar *ngIf="member.profile_pic !==''; else profile_pic">
+    <ion-img (click)="selectImage()" [src]="member.profile_pic"></ion-img>
+  </ion-avatar><br>
+
+  <ng-template #profile_pic>
+    <ion-avatar>
+      <img (click)="selectImage()" src="../assets/pic/pngwing.com.png" />
+    </ion-avatar>
+  </ng-template>
+
+  <form [formGroup]="Register" (ngSubmitForm)="submitForm()" novalidate>
+
+    <ion-label position="floating">ชื่อผู้ใช้</ion-label>
+    <ion-input formControlName="username" [(ngModel)]="member.username"></ion-input>
+        <div *ngIf="this.Register.controls?.username.touched && this.Register.controls?.username.invalid">
+
+      <div class="error ion-padding" *ngIf="errorControl.username.errors?.required" id="errorTEST">
+        <ion-text id="text01" color="danger">กรุณากรอกชื่อผู้ใช้!</ion-text>
+      </div>
+    </div>
+
+    <ion-label  position="floating">ชื่อ</ion-label>
+    <ion-input formControlName="fname" [(ngModel)]="member.fname"></ion-input>
+    <div *ngIf="this.Register.controls?.fname.touched && this.Register.controls?.fname.invalid">
+      
+      <div class="error ion-padding" *ngIf="errorControl.fname.errors?.required" id="errorFname">
+        <ion-text id="text02" color="danger">กรุณากรอกชื่อ!</ion-text>
+      </div>
+    </div>
+
+
+    <ion-label  position="floating">นามสกุล</ion-label>
+    <ion-input formControlName="lname" [(ngModel)]="member.lname"> </ion-input>
+    <div *ngIf="this.Register.controls?.lname.touched && this.Register.controls?.lname.invalid">
+      
+      <div class="error ion-padding" *ngIf="errorControl.lname.errors?.required" id="errorLname">
+        <ion-text id="text03" color="danger">กรุณากรอกนามสกุล!</ion-text>
+      </div>
+    </div>
+
+    <ion-label  
+      position="floating">อีเมล</ion-label>
+    <ion-input formControlName="email" [(ngModel)]="member.email"></ion-input>
+    <div *ngIf="this.Register.controls?.email.touched && this.Register.controls?.email.invalid">
+      
+      <div class="error ion-padding" *ngIf="errorControl.email.errors?.required" id="errorEmail">
+        <ion-text id="text04" color="danger">กรุณากรอกอีเมล!</ion-text>
+      </div>
+
+      <div class="ion-padding" *ngIf="errorControl.email.errors?.pattern">
+        <ion-text id="text05" color="danger">อีเมลไม่ถูกต้อง!</ion-text>
+      </div>
+    </div>
+
+
+    <ion-label  position="floating">รหัสผ่าน</ion-label>
+    <ion-input formControlName="password" type="password" [(ngModel)]="member.password" ></ion-input>
+    <div *ngIf="this.Register.controls?.password.touched && this.Register.controls?.password.invalid">
+      <div class="error ion-padding" *ngIf="errorControl.password.errors?.required" id="errorPassword">
+        <ion-text id="text06" color="danger">กรุณากรอกรหัสผ่าน!</ion-text>
+      </div>
+
+      <div class="ion-padding" *ngIf="errorControl.password.errors?.pattern">
+        <ion-text id="text07" color="danger">รหัสผ่านไม่ถูกต้อง!</ion-text>
+      </div>
+    </div><br><br>
+
+
+
+
+    <ion-button class="A" shape="round" 
+    [disabled]="!Register.valid"
+      (click)="onCilkLonigButton(member)">
+      สมัครสมาชิก
+    </ion-button>
+  </form>
+</ion-content>
+<!-- (click)="onClickSaveButton(member)" -->

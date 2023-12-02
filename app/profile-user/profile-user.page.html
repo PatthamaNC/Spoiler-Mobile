@@ -1,0 +1,50 @@
+<ion-content [fullscreen]="true"><br>
+  <ion-header collapse="condense">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+      rel="stylesheet" />
+
+  </ion-header><br>
+  <!-- <ion-label id="RJ" [routerLink]="['/register-member']">สมัครสมาชิก</ion-label> -->
+  <ion-text id="text01" style="color: #293556;"><B>บัญชี</B></ion-text><br>
+  <!-- <ion-icon id="present-alertTTT" name="exit-outline"></ion-icon> -->
+  
+  <!-- <ion-alert
+  trigger="present-alertTTT"
+  header="ยืนยันการออกจากระบบ?"
+  subHeader="คุณแน่ใจว่าต้องการออกจากระบบหรือไม่?"
+  [buttons]="alertButtonsS"
+></ion-alert> -->
+
+  <ion-item  id="present-alert">
+    <ion-avatar >
+      <ion-img  src="../assets/pic/profile12.png"></ion-img>
+    </ion-avatar>
+    <ion-label>
+      <h2 id="text02">ไม่พบบัญชี</h2>
+      <p id="text03" >กรุณาสมัครสมาชิก</p>
+    </ion-label>
+  </ion-item><br>
+
+
+
+  <ion-card id="card01"  [routerLink]="['/register-member']">
+    <img  src="../assets/pic/add-user.png" id="img-script"><br>
+    <ion-card-content   class="card-content01">
+      สมัครสมาชิก </ion-card-content>
+  </ion-card>
+
+  <ion-card  class="card02" [routerLink]="['/login']">
+    <img src="../assets/pic/key.png" id="img-script"><br>
+    <ion-card-title></ion-card-title>
+
+    <ion-card-content  class="card-content02">
+      เข้าสู่ระบบ </ion-card-content>
+  </ion-card><br>
+
+
+
+<!-- <ion-alert trigger="present-alert" class="custom-alert" header="Are you sure?" [buttons]="alertButtons"></ion-alert> -->
+</ion-content>

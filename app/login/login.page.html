@@ -1,0 +1,75 @@
+
+  <ion-header collapse="condense">
+    <ion-icon id="icon_back"  name="chevron-back-outline" [routerLink]="['/home']"></ion-icon>
+    <label [routerLink]="['/home']" class="label_icon">ย้อนกลับ</label>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+      rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+  </ion-header>
+
+ <ion-content [fullscreen]="true"> 
+  <style>
+    .text-center {
+      text-align: center;
+    }
+  </style>
+
+  <ion-label class="Login">เข้าสู่ระบบ</ion-label>
+
+  <img src="../assets/pic/logo03.png" width="250" height="250" style="margin-left: 80px;">
+  <form [formGroup]="loginForm" (ngSubmitForm)="submitForm()" novalidate>
+    <ion-list>
+      <label id="label01">อีเมล</label>
+      <ion-input formControlName="email" [(ngModel)]="member.email"></ion-input>
+      <div *ngIf="this.loginForm.controls?.email.touched && this.loginForm.controls?.email.invalid">
+
+        <!-- แจ้งเตือนกรอกอีเมลที่ช่องกรอก -->
+        <div class="error ion-padding" *ngIf="errorControl.email.errors?.required" id="errorTEST">
+          <ion-text id="text01" color="danger">กรุณากรอกอีเมล!</ion-text>
+        </div>
+
+        <div class="ion-padding" *ngIf="errorControl.email.errors?.pattern">
+          <ion-text id="text02" color="danger">อีเมลไม่ถูกต้อง!</ion-text>
+        </div>
+      </div><br>
+
+
+      <label id="label01">รหัสผ่าน</label>
+      <ion-input formControlName="password" [(ngModel)]="member.password" type="password"></ion-input>
+
+      <div *ngIf="this.loginForm.controls?.password.touched && this.loginForm.controls?.password.invalid">
+        <div class="error ion-padding" *ngIf="errorControl.password.errors?.required" id="errorPassword">
+          <ion-text id="text03" color="danger">กรุณากรอกรหัสผ่าน!</ion-text>
+        </div>
+        <div class="ion-padding" *ngIf="errorControl.password.errors?.pattern">
+          <ion-text id="text04" color="danger">รหัสผ่านไม่ถูกต้อง!</ion-text>
+        </div>
+      </div>
+      <br><br>
+
+      <ion-row>
+        <ion-col>
+          <ion-button class="A" 
+          (click)="onCilkLonigButton(member.email,member.password)"
+          [disabled]="!loginForm.valid"
+            expand="block">เข้าสู่ระบบ</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-list>
+  </form>
+
+  <div class="text-center">
+    <ion-label [routerLink] = "['/forgot-password01']"><u>ลืมรหัสผ่านใช่หรือไม่</u></ion-label><br><br><br><br><br><br><br><br><br>
+
+    <ion-label  color="medium">
+      รับชมตัวอย่างภาพยนตร์ </ion-label> 
+  
+      <ion-label [routerLink] = "['/tabs-user01/tabs-user02']" ><b> คลิก </b></ion-label  >
+  </div>
+
+</ion-content>

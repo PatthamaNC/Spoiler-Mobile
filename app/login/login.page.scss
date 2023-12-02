@@ -1,0 +1,154 @@
+ion-icon {
+    --ion-background-color: #55cc7f;
+}
+
+ion-content {
+    --ion-background-color: linear-gradient(to right,#d3ebf8, #d3ebf8,#d3ebf8 );
+}
+
+// ion-button {
+//     --background: #55a7d0;
+// }
+
+ion-input {
+    margin-left: -85px;
+    width: 320px;
+    height: 45px;
+    left: 120px;
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+ion-label {
+    font-family: 'Noto Sans Thai', sans-serif;
+    padding: 12px;
+    border-radius: 50px;
+    stroke-linecap: round;
+}
+
+label {
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-left: 35px;
+}
+
+ion-button {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.A {
+    // --border-radius: 50px;
+    margin-left: 120px;
+    margin-right: 120px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    color: #ffffff;
+    width: 142px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #1e4d93;
+    border-radius: 25px;
+}
+
+#container {
+    text-align: center;
+}
+
+ion-label {
+    text-align: center;
+    color: #CC184E;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+ion-input{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+.buttons {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+header {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.message {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+ion-text {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+// กรุณากรอกอีเมล
+#text01 {
+    font-size: 15px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-left: 197px;
+    position: absolute;
+    z-index: 10;
+}
+
+// อีเมลไม่ถูกต้อง
+#text02 {
+    margin-left: 235px;
+}
+
+// กรุณากรอกรหัสผ่าน
+#text03 {
+    font-size: 15px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-left: 179px;
+    position: absolute;
+    z-index: 10;
+}
+
+// รหัสผ่านไม่ถูกต้อง
+#text04 {
+    margin-left: 225px;
+}
+
+// label อีเมล
+#label01{
+    font-size: 17.5px;
+}
+
+// ปุ่มกลับ
+#icon_back{
+    font-size: 25px;
+    margin-left: 12px;
+    margin-top: 30px;
+    color:#012661;
+}
+.label_icon{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-top: 31px;
+    margin-left: -2.5px;
+    font-size: 16px;
+    position: absolute;
+    color:#012661;
+}
+.Login{
+    font-family: 'Noto Sans Thai', sans-serif;
+    color: #072952;
+    font-size: 38px;
+    margin-left: 115px;
+    font-weight: bold;
+}
+#errorTEST{
+    background-color: tomato;
+    margin-top: -48px;
+    border-radius: 500px;
+    border: -70px solid tomato;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: -52px;
+    height: 51.5px;
+}
+#errorPassword{
+    background-color: tomato;
+    margin-top: -48px;
+    border-radius: 200px;
+    border: -50px solid tomato;
+    left: 150px;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: -50px;
+    height: 51.5px;
+}

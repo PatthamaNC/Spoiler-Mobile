@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+    rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+</ion-header>
+
+<ion-content style="--ion-background-color:#ECF3FF;" [fullscreen]="true">
+  <div class="main">
+    <div class="user_div">
+      <ion-label id="BB">รีวิวภาพยนตร์สปอยล์</ion-label>
+      <!-- <ion-icon id="search" name="search-outline"></ion-icon> -->
+      <ion-icon [routerLink]="['/search-one']"  id="search" name="search"></ion-icon>
+      <ion-label id="searchhh">ค้นหา</ion-label>
+    </div>
+  </div>
+  <div class="content_div">
+    <ion-label class="Spoiler">หมวดหมู่รีวิวภาพยนตร์สปอยล์</ion-label>
+  <ion-card id="card01">
+    <!-- <img src="../assets/pic/script.png" id="img-script"><br> -->
+    <img style="width: 150px; height: 90px; border-radius: 8px;" src="../assets/pic/ACDzMc.jpg" id="img-script"><br>
+    <ion-card-content  [routerLink]="['/list-action']" id="card-content01">
+      ภาพยนตร์แอ็กชัน</ion-card-content>
+  </ion-card>
+
+  <ion-card id="card02">
+    <img  style="width: 150px; height: 90px; border-radius: 8px;" src="../assets/pic/Spo-hor.jpg" id="img-script"><br>
+    <ion-card-content [routerLink]="['/list-horror']" id="card-content02">
+      ภาพยนตร์สยองขวัญ</ion-card-content>
+  </ion-card>
+
+  <ion-card id="card01" style="margin-top: 190px; position: absolute;">
+    <!-- <img src="../assets/pic/script.png" id="img-script"><br> -->
+    <img  style="width: 150px; height: 90px; border-radius: 8px;" src="../assets/pic/Spo-car.jpg" id="img-script"><br>
+    <ion-card-content  [routerLink]="['/list-cartoon']" id="card-content01">
+      ภาพยนตร์การ์ตูน </ion-card-content>
+  </ion-card>
+
+  <ion-card id="card02" style="margin-top: 366px; position: absolute;">
+    <img  style="width: 150px; height: 90px; border-radius: 8px;" src="../assets/pic/Spo-roman.jpg" id="img-script"><br>
+    <ion-card-content [routerLink]="['/list-romantic']" id="card-content02">
+      ภาพยนตร์โรแมนติก </ion-card-content>
+  </ion-card>
+</div>
+
+</ion-content>

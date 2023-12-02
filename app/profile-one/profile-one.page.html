@@ -1,0 +1,48 @@
+<ion-content [fullscreen]="true"><br>
+  <ion-header collapse="condense">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+      rel="stylesheet" />
+
+  </ion-header>
+
+  <ion-text style="color: #293556;" id="text01"><B>บัญชี</B></ion-text>
+  <!-- <ion-icon id="present-alert" name="exit-outline"></ion-icon>
+  <ion-label id="exit">Logout</ion-label> -->
+  <ion-item>
+    <ion-avatar [routerLink]="['/profile-two']">
+      <ion-img [src]="member.profile_pic"></ion-img>
+    </ion-avatar><br>
+    <ion-label>
+      <h2 id="text02" [routerLink]="['/profile-two']">{{member.username}}</h2>
+      <p id="text03" [routerLink]="['/profile-two']">ดูโปรไฟล์ของคุณ</p>
+    </ion-label>
+  </ion-item><br><br>
+
+
+  <ion-card id="card01">
+    <!-- <img src="../assets/pic/script.png" id="img-script"><br> -->
+    <img src="../assets/pic/clapperboard.png" id="img-script"><br>
+    <ion-card-content  [routerLink]="['/my-movies']" id="card-content01">
+       ภาพยนตร์ของฉัน </ion-card-content>
+  </ion-card>
+
+  <ion-card id="card02">
+    <img src="../assets/pic/password.png" id="img-script"><br>
+    <ion-card-content [routerLink]="['/edit-password']" id="card-content02">
+      แก้ไขรหัสผ่าน </ion-card-content>
+  </ion-card><br>
+
+    <button class="button" id="present-alertT">ออกจากระบบ</button>
+    <ion-alert
+      trigger="present-alertT"
+      header="ยืนยันการออกจากระบบ?"
+      subHeader="คุณแน่ใจว่าต้องการออกจากระบบหรือไม่?"
+      [buttons]="alertButtons"
+    ></ion-alert>
+
+
+</ion-content>

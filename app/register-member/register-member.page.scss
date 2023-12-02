@@ -1,0 +1,236 @@
+ion-content {
+    --ion-background-color: linear-gradient(to right,#d3ebf8, #d3ebf8,#d3ebf8 );
+}// border: 2px solid #15385b;
+button {
+    // --background: linear-gradient(to right, #48C3EB  , #718EDD);
+    font-family: 'Noto Sans Thai', sans-serif;
+    color: #ffffff;
+    width: 142px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #1e4d93;
+    border-radius: 25px;
+    margin-left: 120px;
+
+}
+ion-label{
+    font-family: 'Noto Sans Thai', sans-serif;
+    
+    padding: 12px;
+    border-radius: 50px;
+    stroke-linecap: round;
+}
+ion-input{
+    margin-left: -85px;
+    width: 320px;
+    height: 45px;
+    left: 120px;
+    font-size: 16px;
+    // background: #D9D9D9;
+    background: #ffffff;
+    border-radius: 20px;
+    
+}
+#AAA{
+    align-content: center;
+}
+
+// จัดหน้าหัวข้อ
+label{
+    margin-left: 35px;
+}
+
+ion-avatar{
+    margin: auto; height: 120px; width: 120px;
+}
+#camera{
+    width: 36px;
+    top: 19.5%;
+    position: absolute;
+    margin-left: 215px;
+    // box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 1.0);
+
+}
+#register{
+    position: absolute;
+    font-size: 20.5px;
+    margin-left: 120px;
+    margin-top: -60px;
+    // margin-top: -20px;
+    color: #0a163f;
+    font-family: 'Noto Sans Thai', sans-serif;
+
+}
+
+// กรุณากรอกชื่อผู้ใช้
+#text01{
+    font-size: 15px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-left: 187px;
+    margin-top: 3px;
+    position: absolute;
+    z-index: 10;
+}
+
+// กรุณากรอกชื่อ
+#text02{
+    font-size: 15px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-left: 210px;
+    margin-top: 3px;
+    position: absolute;
+    z-index: 20;
+}
+
+// กรุณากรอกนามสกุล
+#text03{
+    font-size: 15px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-left: 173px;
+    position: absolute;
+    z-index: 20;
+}
+
+// กรุณากรอกอีเมล
+#text04{
+    font-size: 15px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-left: 197px;
+    position: absolute;
+    z-index: 10;
+}
+
+// อีเมลไม่ถูกต้อง
+#text05{
+    font-size: 16px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-left: 235px;
+    position: absolute;
+}
+
+// กรุณากรอกรหัสผ่าน
+#text06{
+    font-size: 15px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-left: 179px;
+    position: absolute;
+    z-index: 10;
+}
+
+// รหัสผ่านไม่ถูกต้อง
+#text07{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-left: 200px;
+}
+
+// หัวข้อกรอกข้อมูล
+ion-label{
+    margin-left: 28px;
+    font-size: 17.5px;
+}
+#icon01{
+    margin-top: 35px;
+    font-size: 26px;
+    margin-left: 15px;
+}
+ion-input{
+    font-family: 'Noto Sans Thai', sans-serif;
+   
+}
+#camera{
+    // margin-left: -10px;
+    margin-top: 45px;
+}
+// ปุ่มกลับ
+#icon_back{
+    font-size: 25px;
+    margin-left: 12px;
+    margin-top: 30px;
+    color:#012661;
+}
+.label_icon{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-top: 31px;
+    margin-left: -2.5px;
+    font-size: 16px;
+    position: absolute;
+    color:#012661;
+}
+.header{
+    backdrop-filter: blur(20px);
+    background-color: #ffffff1a;
+}
+ion-button{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-left: 120px;
+}
+// ปุ่มกลับ
+#icon_back{
+    font-size: 25px;
+    margin-left: 12px;
+    margin-top: 30px;
+    color:#012661;
+}
+.label_icon{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-top: 31px;
+    margin-left: -2.5px;
+    font-size: 16px;
+    position: absolute;
+    color:#012661;
+}
+#errorTEST{
+    background-color: tomato;
+    margin-top: -48px;
+    border-radius: 200px;
+    border: -50px solid tomato;
+    left: 150px;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: -50px;
+    height: 51.5px;
+}
+#errorFname{
+    background-color: tomato;
+    margin-top: -48px;
+    border-radius: 200px;
+    border: -50px solid tomato;
+    left: 150px;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: -50px;
+    height: 51.5px;
+}
+#errorLname{
+    background-color: tomato;
+    margin-top: -48px;
+    border-radius: 200px;
+    border: -50px solid tomato;
+    left: 150px;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: -50px;
+    height: 51.5px;
+}
+#errorEmail{
+    background-color: tomato;
+    margin-top: -48px;
+    border-radius: 200px;
+    border: -50px solid tomato;
+    left: 150px;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: -50px;
+    height: 51.5px;
+}
+#errorPassword{
+    background-color: tomato;
+    margin-top: -48px;
+    border-radius: 200px;
+    border: -50px solid tomato;
+    left: 150px;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: -50px;
+    height: 51.5px;
+}

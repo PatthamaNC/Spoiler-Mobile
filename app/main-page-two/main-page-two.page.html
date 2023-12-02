@@ -1,0 +1,81 @@
+<ion-app>
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+        rel="stylesheet" />
+
+    </ion-header>
+    <style>
+      .text-center {
+        text-align: center;
+      }
+    </style>
+
+    <div class="main">
+
+      <div class="user_div">
+
+        <ion-label id="P">หน้าหลัก</ion-label>
+        <ion-chip>
+          <ion-avatar id="profile" [routerLink]="['/profile-two']">
+            <ion-img id="profile" [src]="member.profile_pic"></ion-img>
+          </ion-avatar>
+          <ion-label style="font-size: 18.5px;">{{member.username}}</ion-label>
+        </ion-chip>
+
+      </div>
+    </div>
+
+    <div class="content_div">
+
+      <div id="silde">
+        <swiper-container autoplay="5000" loop="true" speed="300" pager="true">
+          <swiper-slide ><img width="90%" src="../assets/pic/044.jpg" id="picB"></swiper-slide>
+          <swiper-slide><img width="90%" src="../assets/pic/01.jpg" id="picB"></swiper-slide>
+          <swiper-slide><img width="90%" src="../assets/pic/02.jpg" id="picB"></swiper-slide>
+          <swiper-slide><img width="90%" src="../assets/pic/03.jpg" id="picB"></swiper-slide>
+
+        </swiper-container>
+      </div>
+
+      <br><br>
+
+      <ion-label style="
+  font-family: 'Noto Sans Thai', sans-serif;">
+        <b id="b">หมวดหมู่วิดีโอภาพยนตร์สปอยล์</b></ion-label>
+
+      <div class="text-center">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <img src="../assets/pic/ปกแอคชั่น.png" [routerLink]="['/video-action01']" id="picA"> </ion-col>
+
+            <ion-col>
+              <img src="../assets/pic/ปกสยองขวัญ.png" [routerLink]="['/video-horror01']" id="picA"> </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col class="A">
+              <img src="../assets/pic/ปกการ์ตูน.png" [routerLink]="['/video-cartoon001']" id="picA"> </ion-col>
+
+            <ion-col>
+              <img src="../assets/pic/ปกโรแมนติก-1.png" [routerLink]="['/video-romantic01']" id="picA"> </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+  </ion-content>

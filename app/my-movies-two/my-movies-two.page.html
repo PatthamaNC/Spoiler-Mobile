@@ -1,0 +1,124 @@
+<ion-header>
+  <ion-icon id="icon_back" name="chevron-back-outline" [routerLink]="['/my-movies']"></ion-icon>
+  <label [routerLink]="['/my-movies']" class="label_icon">ภาพยนตร์</label>
+
+  <!-- (click)="onClickDeleteButton()" <ion-icon id="icon_edit" name="create-outline" [routerLink]="['/edit-my-movies01/', myspoilerdetail.spoilerID]"></ion-icon> -->
+  <!-- <ion-icon style=" color: rgb(55, 124, 197);" class="icon_list" id="popover-button" name="ellipsis-vertical-circle-outline"></ion-icon> -->
+  <ion-icon style="color:#012661;" class="icon_list" id="popover-button" name="list"></ion-icon>
+  <ion-popover trigger="popover-button" [dismissOnSelect]="true">
+    <ng-template>
+      <ion-content>
+        <ion-list>
+          <ion-item id="item" [button]="true" [detail]="false"
+            [routerLink]="['/edit-my-movies01/', myspoilerdetail.spoilerID]">แก้ไขภาพยนตร์<ion-icon id="icon_edit02"
+              name="create-outline"></ion-icon></ion-item>
+          <ion-item class="item" id="present-alertTT" [detail]="false">ลบภาพยนตร์<ion-icon id="icon_detele2"
+              name="trash-outline"></ion-icon></ion-item>
+        </ion-list>
+        <ion-alert trigger="present-alertTT" header="ยืนยันการลบภาพยนตร์?"
+          subHeader="คุณแน่ใจว่าต้องการลบภาพยนตร์สปอยล์" [buttons]="alertButtons"></ion-alert>
+      </ion-content>
+    </ng-template>
+
+  </ion-popover>
+
+  <div class="ion-text-center" id="text04">
+    <ion-label>{{myspoilerdetail.spoiler_name}}</ion-label>
+  </div>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+    rel="stylesheet" />
+
+
+
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-thumbnail id="thumbnail">
+    <ion-img [src]="myspoilerdetail.spoiler_img"
+      [routerLink]="['/edit-my-movies01/',myspoilerdetail.spoilerID]"></ion-img>
+  </ion-thumbnail><br>
+
+  <ion-avatar [routerLink]="['/profile-two']">
+    <ion-img id="img" [src]="member.profile_pic"></ion-img>
+  </ion-avatar>
+  <ion-text id="text05">{{member.username}}</ion-text><br><br>
+
+  <ion-text id="text22">หมวดหมู่ : {{myspoilerdetail.spoiler_category}}</ion-text>
+  <ion-label class="text" id="open-modal">ดูเพิ่มเติม...</ion-label>
+
+
+
+  <ion-text id="text03"> {{myspoilerdetail.spoiler_details}} </ion-text><br><br><br>
+  <!-- <ion-row *ngFor="let spoiler of spoilers"></ion-row> -->
+  <ion-modal #modal trigger="open-modal" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]">
+    <ng-template>
+      <ion-content class="TEST"><br>
+        <div class="ion-text-center"> <ion-label id="label02">ข้อมูลเพิ่มเติม</ion-label></div>
+        <ion-list style="border-radius: 25px;" lines="none">
+          <ion-item>
+            <ion-label id="label11">หมวดหมู่ : {{myspoilerdetail.spoiler_category}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label id="label11">นักแสดง : {{myspoilerdetail.actor}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label id="label11">ผู้กำกับ : {{myspoilerdetail.director}}</ion-label>
+          </ion-item>
+        </ion-list>
+
+
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <button class="button002" (click)="loadComents()" id="open-modal02" shape="round" expand="block">ความคิดเห็น
+  </button>
+
+  <ion-modal #modal trigger="open-modal02" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]">
+    <ng-template>
+      <ion-content><br>
+        <div class="ion-text-center"> <ion-label id="label02">ความคิดเห็น</ion-label></div>
+        <ion-list style="border-radius: 25px;" *ngFor="let spoiler of comments">
+          <ion-item>
+            <ion-avatar slot="start" z>
+              <ion-img src="{{spoiler.profile_pic}}"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <h2><ion-text id="text100">{{spoiler.username}}</ion-text></h2>
+              <p id="p">{{spoiler.message}}</p>
+            </ion-label>
+
+            <!-- icon report -->
+            <div *ngIf="spoiler.member_id !== member.id ">
+              <ion-icon style="color: tomato;" class="icon02" name="flag" id="present-alertComment"
+                (click)="ReportSpoilerAlert(spoiler.commentID)"></ion-icon>
+
+              <ion-alert [isOpen]="OpentReportSpoilerAlert" trigger="present-alertComment" header="รายงานความคิดเห็น"
+                [buttons]="alertButtonsComment" [inputs]="alertInputsComment"></ion-alert>
+            </div>
+
+          </ion-item>
+
+        </ion-list><br>
+
+        <!-- item input comment -->
+        <ion-item style="border-radius: 30px;">
+          <ion-avatar slot="start">
+            <ion-img [src]="member.profile_pic"></ion-img>
+          </ion-avatar>
+
+          <ion-input [(ngModel)]="commentMessage" placeholder="เขียนความคิดเห็น..."></ion-input>
+          <ion-icon (click)="sendComment()" id="icon03" name="send"></ion-icon>
+
+
+
+        </ion-item>
+
+      </ion-content>
+
+    </ng-template>
+  </ion-modal>
+
+
+</ion-content>

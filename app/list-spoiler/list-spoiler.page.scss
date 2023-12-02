@@ -1,0 +1,109 @@
+#card01 {
+  --background: #ffffff;
+  width: 180px;
+  height: 150px;
+  top: 50px;
+  margin-left: 13px;
+}
+
+#card02 {
+  position: relative;
+  --background: #ffffff;
+  width: 180px;
+  height: 150px;
+  top: -124px;
+  margin-left: 200px;
+}
+
+// ตัวหนังสือภาพยนตร์ของฉัน
+#card-content01 {
+  margin-top: 75px;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+// ตัวหนังสือภาพยนตร์ของฉัน
+#card-content02 {
+  margin-top: 75px;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+
+#img-script {
+  position: absolute;
+  margin-left: 18px;
+  margin-top: 18px;
+  height: 42%;
+  width: 19.5%;
+}
+
+.main {
+  width: 100%;
+
+  .menu_btn {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+  }
+
+  .user_div {
+    padding: 10px;
+    width: 100%;
+    height: 260px;
+    background: linear-gradient(to right, #718EDD, #48C3EB);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  ion-label {
+    font-size: 23px;
+    // color: #f0f2f5;
+    font-family: 'Noto Sans Thai', sans-serif;
+  }
+}
+
+.content_div {
+  position: absolute;
+  width: 393px;
+  height: 1000px;
+  left: 0px;
+  top: 114px;
+  // background: #f0f2f5;
+  background: linear-gradient(to right, #E4F0F6, #ECF3FF, #ebf5fb);
+
+  border-radius: 100px;
+
+  margin-top: -15px;
+}
+
+#BB {
+  font-size: 30px;
+  margin-left: -3px;
+  margin-top: -1px;
+  color: white;
+}
+
+.Spoiler {
+  font-size: 21px;
+  color: #435da5;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-weight: bold;
+  position: absolute;
+  margin-left: 25px;
+  // margin-left: 83px;
+  margin-top: 30px;
+}
+
+#search {
+  font-size: 30px;
+  color: white;
+}
+
+#searchhh {
+  font-size: 16px;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 340px;
+  font-family: 'Noto Sans Thai', sans-serif;
+  color: white;
+}

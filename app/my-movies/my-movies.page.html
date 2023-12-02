@@ -1,0 +1,29 @@
+<ion-header collapse="condense">
+  <ion-icon id="icon_back" name="chevron-back-outline" [routerLink] = "['/main-page/profile-one']">
+  </ion-icon><label [routerLink] = "['/main-page/profile-one']" class="label_icon">โปรไฟล์</label>
+  <div id="mymovie" class="ion-text-center">
+    <ion-label id="my_movies" > ภาพยนตร์ของฉัน </ion-label>
+  </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap" rel="stylesheet"/>
+<br><br>
+</ion-header> 
+
+<ion-content [fullscreen]="true">
+
+<div >
+
+  <ion-row  *ngFor="let movie of mymovies">
+    <ion-col>
+      <ion-card >
+        <ion-img id="img" [routerLink]="['/my-movies-two/', movie.spoilerID]" [src]="movie.spoiler_img"></ion-img>
+        <ion-card-header style="background-color: white;">
+          <ion-card-title>ชื่อภาพยนตร์ : {{movie.spoiler_name}} </ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</div>
+</ion-content>
+

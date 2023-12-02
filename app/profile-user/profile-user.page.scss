@@ -1,0 +1,204 @@
+ion-content {
+  --ion-background-color: linear-gradient(to right,#E4F0F6, #ECF3FF,#ebf5fb );
+}
+  #text01{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-left: 175px;
+      font-size: 25px;
+      // color: #5883ce;
+      margin-top: 10px;
+  }
+.WW{
+  font-size: 18.5px;
+  // font-weight: bold;
+}
+  
+  .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+    
+      height: 170px;
+      width: 400px;
+    
+      margin: 0 auto;
+    }
+    
+    b {
+      width: 100%;
+    }
+    
+    .ripple-parent {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+      position: relative;
+      overflow: hidden;
+    
+      border: 1px solid #ddd;
+    
+      user-select: none;
+    
+      width: 100%;
+      height: 50px;
+      border-radius: 8px;
+    }
+    p{
+      font-size: 18px;
+    }
+    ion-alert.custom-alert {
+      --backdrop-opacity: 0.7;
+    }
+    
+    ion-alert{
+      font-family: 'Noto Sans Thai', sans-serif;
+    }
+    ion-button{
+      font-family: 'Noto Sans Thai', sans-serif;
+    }
+   
+    ion-title {
+      font-family: 'Sarabun', sans-serif;
+      font-family: 'Noto Sans Thai', sans-serif;
+      font-size: 25px;
+  }
+  
+  ion-avatar{
+    margin-top: 20px;
+    height: 80px; width: 80px;
+    margin-left: 30px;
+  }
+  
+  // username
+  #text02{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  // 
+  #text03{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #989595;
+  }
+  
+  // ปุ่มภาพยนตร์ของฉัน
+  #button01{
+    --background: #ffffff;
+    color: black;
+    margin-left: 30px;
+    width: 150px;
+    height: 85px;
+  }
+  // ปุ่มแก้ไขรหัสผ่าน
+  #button02{
+    --background: #ffffff;
+    color: black;
+    position: relative;
+    height: 85px;
+    width: 150px;
+    top: 0px;
+    margin-left: 20px;
+  }
+  // ปุ่มออกจากระบบ
+  .button03{
+    --background: #ffffff;
+    color: black;
+    height: 85px;
+    width: 150px;
+    margin-left: 30px;
+  }
+  
+  #card01{
+    --background: #ffffff; 
+    width: 170px;
+    height: 85px;
+    margin-left: 20px;
+  }
+  .card-content01{
+   margin-top: 20px;
+    font-family: 'Noto Sans Thai', sans-serif;
+  }
+  
+  .card02{
+    position: relative;
+    --background: #ffffff; 
+    width: 170px;
+    height: 85px;
+    top: -109px;
+    margin-left: 200px;
+  }
+  .card-content02{
+   margin-top: 20px;
+    font-family: 'Noto Sans Thai', sans-serif;
+  }
+  
+  .card03{
+    --background: #ffffff; 
+    width: 170px;
+    height: 85px;
+    top: -165px;
+    margin-left: 20px;
+  }
+  .card-content03{
+   margin-top: 35px;
+    font-family: 'Noto Sans Thai', sans-serif;
+  }
+  .button001{
+    width: 100px;
+  
+    margin-top: -500px;
+    margin-left: 70px;
+    --background: #ffffff; 
+  }
+  #img01{
+    margin: auto; top: -100px;
+    height: 35px;
+    width: 35px;
+    margin-top: -400px;
+    margin-left: -100px;
+  }
+  #button003{
+    --background: #ffffff; 
+     
+      margin-left: 150px;
+  }
+  ion-button{
+    color: #3561ae;
+    --background: #ffffff;  
+    margin-top: 270px;
+    position: absolute;
+    width: 357px;
+    height: 47px;
+    left: 22px;
+    border-radius: 23.5px;
+  }
+  #img-script {
+    position: absolute;
+    margin-left: 18px;
+    margin-top: 18px;
+    height: 42%;
+    width: 19.5%;
+  }
+  ion-icon{
+    position: absolute;
+    margin-top: -58px;
+    font-size: 28px;
+    margin-left: 350px;
+    // color: #3d3e40d2;
+    color:#012661;
+  }
+#RJ{
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 13px;
+  color: #052597;
+  font-size: 16px;
+  font-family: 'Noto Sans Thai', sans-serif;
+font-weight: bold;
+}

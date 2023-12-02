@@ -1,0 +1,65 @@
+ion-content {
+    --ion-background-color: linear-gradient(to right,#E4F0F6, #ECF3FF,#ebf5fb );
+
+}
+
+
+ion-card-title{
+    font-size: larger;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin: auto;
+}
+ion-card{
+    background-color: #e8e4df;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+#mymovie{
+    margin-top: -30px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+#label01{
+    margin: auto;
+}
+// ion-label{
+//     color: #293556;
+// }
+
+// ชื่อภาพยนตร์จัดกึ่งกลาง
+.ion-text-center {
+    text-align: center;
+}
+ion-icon{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+// header เบลอ
+ion-header{
+    backdrop-filter: blur(10px);
+    background-color: #e4f0f6b1;
+}
+// ปุ่มกลับ
+#icon_back{
+    font-size: 25px;
+    margin-left: 12px;
+    margin-top: 30px;
+    color:#012661;
+}
+.label_icon{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-top: 31px;
+    margin-left: -2.5px;
+    font-size: 16px;
+    position: absolute;
+    color:#012661;
+}
+#my_movies{
+    font-size: 21px;
+    margin-top: -5px;
+    position: absolute;
+    margin-left: -65px;
+    color: #293556;
+}

@@ -1,0 +1,32 @@
+
+<ion-content [fullscreen]="true">
+
+  <br><br><br><br><br><br><br><br><br><br>
+  <img src="../assets/pic/movie.jpg" alt="">
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+  <ion-tab-button tab="main-page-two" (click)="showhome()">
+      <ion-icon name="home-outline"></ion-icon>
+      <label style="font-size: 11.75px;">หน้าหลัก</label>
+    </ion-tab-button>
+    <ion-tab-button tab="review" (click)="showreview()">
+      <ion-icon name="create-outline"></ion-icon>
+      <label style="font-size: 11.75px;">เขียนรีวิว</label>
+    </ion-tab-button>
+    <ion-tab-button tab="list-spoiler" (click)="showsearch()">
+      <ion-icon name="film-outline"></ion-icon>
+      <label style="font-size: 11.75px;">ภาพยนตร์</label>
+    </ion-tab-button>
+    <ion-tab-button tab="profile-one" (click)="showprofile()">
+      <ion-icon name="person-outline"></ion-icon>
+      <label style="font-size: 11.75px;">บัญชี</label>
+    </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+
+
+
+
+</ion-content>
