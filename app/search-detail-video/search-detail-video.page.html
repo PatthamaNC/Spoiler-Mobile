@@ -1,0 +1,233 @@
+<!-- <ion-header class="header">
+  <ion-icon id="icon_back"  name="chevron-back-outline" [routerLink]="['/main-page/search-one']"></ion-icon>
+  <label [routerLink]="['/main-page/search-one']" class="label_icon">ย้อนกลับ</label>
+  <div  id="text01" class="ion-text-center">
+  {{video.name}}
+</div><br>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Noto+Sans+Thai:wght@100;200;300;400&family=PT+Sans&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+  rel="stylesheet">
+</ion-header>
+
+<ion-content class="ion-padding">
+<video 
+width="100%" 
+height="25%" 
+controls
+  id="video01" 
+  [src]="video.videos" 
+  type="video/mp4"
+  #videoPlayer
+  (cilck)="toggleVideo()">
+</video>
+
+<br><br> <ion-avatar>
+  <ion-img src="../assets/pic/profile12.png"></ion-img>
+</ion-avatar>
+<ion-text id="textAdmin">Admin </ion-text><br>
+<ion-icon (click)="ReportVDOAlert(VideosID)" class="icon-flag" id="present-alert" size="large" name="flag"></ion-icon><br>
+
+<ion-alert
+  [isOpen]="OpentReportVDOAlert"
+  trigger="present-alert"
+  header="รายงานภาพยนตร์สปอยล์"
+  [buttons]="alertButtons"
+  [inputs]="alertInputsS"
+></ion-alert>
+
+<ion-text id="text00">หมวดหมู่ : {{video.category}}</ion-text><br>
+<ion-text class="text02" id="open-modal">ดูเพิ่มเติม...</ion-text>
+
+<ion-text  id="subtitles"> {{video.details}} </ion-text><br><br><br>
+
+<ion-modal #modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+  <ng-template>
+    <div class="block">
+      <ion-list id="list01" lines="none">
+        <ion-item id="item01">
+          <ion-label id="label11">หมวดหมู่ : {{video.category}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label id="label11">นักแสดง : {{video.actor}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label id="label11">ผู้กำกับ : {{video.director}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ng-template>
+</ion-modal>
+
+</ion-content> -->
+
+<!-- <ion-header>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Noto+Sans+Thai:wght@100;200;300;400&family=PT+Sans&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+    rel="stylesheet">
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-icon size="large" name="chevron-back-outline" [routerLink]="['/video-action01']"></ion-icon>
+
+  <div  id="text01" class="ion-text-center">{{video.name}}
+  </div><br>
+  
+  <video 
+  width="100%" 
+  height="25%" 
+  controls
+    id="video01" 
+    [src]="video.videos" 
+    type="video/mp4"
+    #videoPlayer
+    (cilck)="toggleVideo()">
+  </video>
+  
+  
+  
+  
+  <br><br> <ion-avatar>
+    <ion-img src="../assets/pic/profile12.png"></ion-img>
+  </ion-avatar>
+  <ion-text id="textAdmin">Admin </ion-text><br>
+  <ion-icon  (click)="ReportVDOAlert(VideosID)" class="icon-flag" id="present-alert" size="large" name="flag-outline"></ion-icon><br>
+
+<ion-alert
+  [isOpen]="OpentReportVDOAlert"
+  trigger="present-alert"
+  header="รายงานภาพยนตร์สปอยล์"
+  [buttons]="alertButtons"
+  [inputs]="alertInputsS"
+></ion-alert>
+  <ion-text id="text00">หมวดหมู่ : {{video.category}}</ion-text><br>
+  <ion-text class="text02" id="open-modal">ดูเพิ่มเติม</ion-text>
+
+
+
+  <ion-text id="subtitles"> {{video.details}} </ion-text><br><br><br>
+
+
+
+
+
+  <ion-modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+    <ng-template>
+      <div class="block">
+        <ion-list id="list01" lines="none">
+          <ion-item id="item01">
+            <ion-label id="label11">หมวดหมู่ : {{video.category}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label id="label11">นักแสดง : {{video.actor}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label id="label11">ผู้กำกับ : {{video.director}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ng-template>
+  </ion-modal>
+</ion-content> -->
+
+
+
+<ion-header class="header" >
+  <ion-icon id="icon_back"  name="chevron-back-outline" [routerLink]="['/search-one']"></ion-icon>
+  <label [routerLink]="['/search-one']" class="label_icon">ย้อนกลับ</label>
+  <div class="ion-text-center" id="text04">{{video.name}}</div>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+    rel="stylesheet" />
+</ion-header>
+
+<ion-content >
+
+<br><br>
+
+<video 
+width="100%" 
+height="25%" 
+controls
+  id="video01" 
+  [src]="video.videos" 
+  type="video/mp4"
+  #videoPlayer
+  (cilck)="toggleVideo()">
+</video><br><br>
+
+<ion-avatar style="margin-left: 20px;">
+  <ion-img src="../assets/pic/profile12.png"></ion-img>
+</ion-avatar>
+<ion-text id="textAdmin">Admin </ion-text><br>
+<ion-icon style="color: tomato;" (click)="ReportVDOAlert(VideosID)" class="icon-flag" id="present-alert" size="large" name="flag"></ion-icon><br>
+<ion-alert
+[isOpen]="OpentReportVDOAlert"
+trigger="present-alert"
+header="รายงานภาพยนตร์สปอยล์"
+[buttons]="alertButtons"
+[inputs]="alertInputsS"
+></ion-alert>
+
+<ion-text id="text00">หมวดหมู่ : {{video.category}}</ion-text><br>
+<ion-text class="text02" id="open-modal">ดูเพิ่มเติม...</ion-text>
+
+
+<ion-text id="subtitles"> {{video.details}} </ion-text><br><br><br>
+<ion-modal #modal trigger="open-modal" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]">
+  <ng-template>
+    <ion-content><br>
+      <div class="ion-text-center"> <ion-label id="label02">ข้อมูลเพิ่มเติม</ion-label></div>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-label id="label11">หมวดหมู่ : {{video.category}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label id="label11">นักแสดง : {{video.actor}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label id="label11">ผู้กำกับ : {{video.director}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-modal>
+
+<button class="button002" (click)="loadComents()" id="open-modal02" shape="round" expand="block">ความคิดเห็น
+</button>
+
+<ion-modal #modal trigger="open-modal02" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]">
+  <ng-template>
+    <ion-content><br>
+      <div class="ion-text-center"> <ion-label id="label02">ความคิดเห็น</ion-label></div>
+      <ion-list *ngFor="let spoiler of commentVideos" style="border-radius: 25px;">
+        <ion-item>
+          <ion-avatar slot="start" z>
+            <ion-img src="{{spoiler.profile_pic}}"></ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2><ion-text id="text100">{{spoiler.username}}</ion-text></h2>
+            <p id="p">{{spoiler.message}}</p>
+          </ion-label>
+           <div *ngIf="spoiler.member_id !== member.id ">
+            <ion-icon style="color: tomato;" class="icon02" name="flag" id="present-alertComment"
+              (click)="ReportSpoilerAlertComment(spoiler.commentID)"></ion-icon>
+          </div>
+        </ion-item>
+
+        <ion-alert [isOpen]="OpentReportSpoilerAlertComment" trigger="present-alertComment" header="รายงานความคิดเห็น"
+          [buttons]="alertButtonsS" [inputs]="alertInputsSS"></ion-alert>
+      </ion-list><br>
+      <!-- item input comment -->
+      <ion-item style="border-radius: 30px;">
+        <ion-avatar slot="start">
+          <ion-img [src]="member.profile_pic"></ion-img>
+        </ion-avatar>
+
+        <ion-input [(ngModel)]="commentMessage" placeholder="เขียนความคิดเห็น..."></ion-input>
+        <ion-icon (click)="sendComment()" id="icon03" name="send"></ion-icon>
+      </ion-item>
+    </ion-content>
+  </ng-template>
+</ion-modal>
+
+</ion-content>

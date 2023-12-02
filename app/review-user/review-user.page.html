@@ -1,0 +1,72 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+      rel="stylesheet" />
+  </ion-header>
+  <style>
+    .text-center {
+      text-align: center;
+    }
+  </style>
+  <div class="main">
+
+    <div class="user_div">
+      <ion-label id="EE">เพิ่มภาพยนตร์</ion-label>
+
+    </div>
+  </div>
+
+
+  <div class="content_div"><br><br>
+
+    <ion-label position="floating">ชื่อภาพยนตร์</ion-label>
+    <ion-input class="ion-input" placeholder=""></ion-input>
+    <br>
+
+
+    <ion-label>ประเภทภาพยนตร์</ion-label>
+    <ion-select label-placement="floating" fill="outline">
+      <ion-select-option value="แอ็คชั่น">แอ็คชั่น</ion-select-option>
+      <ion-select-option value="โรแมนติก">โรแมนติก</ion-select-option>
+      <ion-select-option value="การ์ตูน">การ์ตูน</ion-select-option>
+      <ion-select-option value="สยองขวัญ">สยองขวัญ</ion-select-option>
+    </ion-select>
+    <br>
+
+    <ion-label position="floating">นักแสดง</ion-label>
+    <ion-input class="ion-input" placeholder=""></ion-input><br>
+
+    <ion-label position="floating">ผู้กำกับ</ion-label>
+    <ion-input class="ion-input" placeholder=""></ion-input><br>
+
+
+
+    <ion-label position="floating">เนื้อหาภาพยนตร์</ion-label>
+
+    <ion-textarea id="textarea" [clearOnEdit]="true"></ion-textarea>
+
+    <br><br><br><br><br><br><br><br>
+
+
+
+    <ion-label>อัปโหลดรูปภาพ</ion-label>
+    <img id="imgggg" src="../assets/pic/Untitled-1.png">
+
+    <ion-thumbnail>
+      <ion-img (click)="selectImage()" [src]="spoiler.spoiler_img"></ion-img>
+      <ion-icon id="icon01" size="large" name="camera"></ion-icon>
+    </ion-thumbnail>
+    <br><br>
+
+
+    <button class="A" id="present-alert" shape="round">อัปโหลด</button><br><br>
+    <!-- <ion-alert trigger="present-alert" class="custom-alert"
+      header="คุณยังไม่ได้สมัครสมาชิก คุณต้องการสมัครสมาชิกหรือไม่?" [buttons]="alertButtons"></ion-alert>
+   -->
+   <br><br><br><br><br>
+    </div>
+
+</ion-content>

@@ -1,0 +1,129 @@
+ion-content {
+  --ion-background-color: linear-gradient(to right,#d3ebf8, #d3ebf8,#d3ebf8 );
+}
+
+#text01 {
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-size: 23px;
+  color: #0c4a96;
+  font-weight: bold;
+  margin-top: -35px;
+}
+
+#video01 {
+  margin: auto;
+}
+
+.block {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2f5;
+}
+
+ion-modal {
+  --height: auto;
+}
+
+// ดูเพิ่มเติม
+.text02 {
+  font-family: 'Noto Sans Thai', sans-serif;
+  position: absolute;
+  margin-left: 300px;
+  margin-top: -35px;
+  color: #5d5e5f
+}
+
+// หมวดหมู่
+#text00 {
+  position: absolute;
+  font-family: 'Noto Sans Thai', sans-serif;
+  margin: auto;
+  color: #090909;
+  font-size: 16px;
+  margin-left: 220px;
+  margin-top: -37px;
+
+}
+
+ion-item {
+  --ion-background-color: #f0f2f5;
+
+}
+
+#label11 {
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-size: 16px;
+    color: #03101e;
+}
+
+// คำอธิบายวิดีโอสแอยล์
+#subtitles {
+  font-family: 'Noto Sans Thai', sans-serif;
+  margin: auto;
+  font-size: 16px;
+  margin-top: -90px;
+  margin-left: 80px;
+}
+
+.button01 {
+  font-family: 'Noto Sans Thai', sans-serif;
+  // font-size: 18px;
+  // // border: 3px solid #9A9CEA;
+  // border-radius: 10px;
+  // border: 1.5px solid #1b74e4;
+  // padding: 5px;
+  --background: #F2EFEF;
+  font-size: 18px;
+  color: black;
+  position: absolute;
+  width: 302px;
+  height: 51px;
+  left: 44px;
+  top: 651px;
+  border: 2px solid #1B74E4;
+  border-radius: 14px;
+}
+
+#icon {
+  position: absolute;
+  margin-top: 100px;
+}
+
+#textAdmin {
+  font-family: 'Noto Sans Thai', sans-serif;
+  position: absolute;
+  margin-left: 55px;
+  margin-top: -35px;
+  font-size: 18px;
+}
+
+// ชื่อภาพยนตร์จัดกึ่งกลาง
+.ion-text-center {
+  text-align: center;
+}
+
+// icon รายงาน
+.icon-flag {
+  position: absolute;
+  margin-left: 310px;
+  margin-top: -60px;
+  // color: rgb(77, 148, 240);
+  color: #0c4a96;
+  // background-color: #0c4a96;
+}
+ion-alert{
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+#label02{
+  --ion-background-color: #f0f2f5;
+  font-family: 'Noto Sans Thai', sans-serif;
+  margin-left: 40%;
+  margin-top: -16px;
+  font-weight: bold;
+  font-size: 18px;
+    color: #051c37;
+}

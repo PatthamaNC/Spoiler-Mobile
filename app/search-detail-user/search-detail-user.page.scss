@@ -1,0 +1,205 @@
+ion-content {
+    --ion-background-color: linear-gradient(to right,#E4F0F6, #E4F0F6,#E4F0F6 );
+  }
+#content{
+    background-color: #062d5c;
+}
+// หมวดหมู่
+#text02 {
+    position: absolute;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin: auto;
+    color: #595f65;
+    font-size: 16px;
+    margin-left: 380px;
+    margin-top: -90px;
+
+}
+
+
+// เนื้อหาสปอยล์
+#text03 {
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin: auto;
+    font-size: 17.5px;
+    margin-left: 80px;
+}
+
+// ชื่อภาพยนตร์
+#text04 {
+    // position: absolute;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 19px;
+    margin-top: -30px;
+    font-weight: bold;
+    // จัดตัวหนังสือกึ่งกลาง
+    // margin-left: 120px;
+    // margin-top: -13px;
+    color: #072952;
+}
+
+// username ผู้อัพโหลดภาพยนตร์
+#text05 {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 85px;
+}
+
+// ปกภาพยนตร์
+#thumbnail {
+    margin: auto;
+    height: 220px;
+    width: 330px;
+    // --size: 250px;
+    --border-radius: 14px;
+}
+
+// โปรไฟล์ผู้อัพโหลดภาพยนตร์
+#img {
+    margin-left: 28px;
+}
+
+//ดูเพิ่มเติม
+.text {
+    font-family: 'Noto Sans Thai', sans-serif;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: -21px;
+    color: #595f65;
+    font-size: 14px;
+}
+ion-label {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+ion-text{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+// หมวดหมู่
+#text22 {
+    position: absolute;
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin: auto;
+    font-size: 14.5px;
+    margin-left: 235px;
+    margin-top: -40px;
+
+}
+
+// พื้นหลัง
+.ion-padding {
+    --ion-background-color: #f0f2f5;
+}
+
+//  ปุ่มความคิดเห็น
+.button002 {
+    font-family: 'Noto Sans Thai', sans-serif;
+    --background: #F2EFEF;
+    font-size: 18px;
+    color: black;
+    position: absolute;
+    width: 302px;
+    height: 51px;
+    left: 44px;
+    top: 810px;
+    // top: 865px;
+    border: 2px solid #1B74E4;
+    border-radius: 14px;
+}
+
+// หมวดหมู่ นักแสดง ผู้กำกับ
+#label11 {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 17.5px;
+    margin-top: -10px;
+}
+
+
+// icon ส่งความคิดเห็น
+#icon03 {
+    margin-left: 10px;
+    color: #307ede;
+
+}
+
+// icon รายงาน
+#icon02 {
+    color: #ff0000da;
+}
+
+// input เขียนความคิดเห็น
+ion-input {
+    border: 1.5px solid #a5a5a5;
+    border-radius: 15px;
+    font-family: 'Noto Sans Thai', sans-serif;
+    background-color: #F2EFEF;
+    padding: 10px;
+    border-radius: 50px;
+    stroke-linecap: round;
+
+}
+
+// message=ความคิดเห็นที่ผู้ใช้แสดงความคิดเห็น
+#p {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 15px;
+    color: #302f2f;
+}
+
+// username ผู้ใช้ที่แสดงความคิดเห็น
+#text100 {
+    font-family: 'Noto Sans Thai', sans-serif;
+
+}
+
+#icon {
+    margin-left: 280px;
+}
+
+// icon รายงาน
+.icon-flag {
+    position: absolute;
+    margin-left: 330px;
+    margin-top: -75px;
+    color: #3D7EAA;
+}
+ion-alert{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+//จัดกึ่งกลาง
+.ion-text-center {
+    text-align: center;
+  }
+  #label02{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #062d5c;
+}
+ion-modal{
+    backdrop-filter: blur(1.5px);
+    background-color: #ffffff1a;
+
+}
+// ปุ่มกลับ
+#icon_back{
+    font-size: 25px;
+    margin-left: 12px;
+    color:#012661;
+    margin-top: 30px;
+}
+.label_icon{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin-top: 31px;
+    margin-left: -2.5px;
+    font-size: 16px;
+    position: absolute;
+    color:#012661;
+}
+
+ion-header{
+    backdrop-filter: blur(10px);
+    background-color: #E4F0F6;
+}

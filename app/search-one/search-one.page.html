@@ -1,0 +1,73 @@
+ <ion-header >
+  <ion-icon (click)="clickBack()" id="icon_back" name="chevron-back-outline" ></ion-icon>
+  <label (click)="clickBack()"  class="label_icon">ย้อนกลับ</label>
+  <label id="labelSearch">ค้นหาภาพยนตร์</label>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+      rel="stylesheet" />
+  </ion-header>
+
+<ion-content >
+
+<br>
+  
+
+    <ion-searchbar placeholder="ค้นหาภาพยนตร์ นักแสดงหรือผู้กำกับ" (ionBlur)="handleIonBlur()" (ionCancel)="handleIonCancel()" (ionChange)="handleIonChange()"
+      (ionClear)="handleIonClear()" (ionFocus)="handleIonFocus()" (ionInput)="handleIonInput($event)">
+    </ion-searchbar>
+
+    <!-- <br><br><br><br>
+
+
+
+
+    <div class="card">
+      <ion-img src="../assets/pic/img-hero-bulk.svg"></ion-img>
+      <h3 style="color: #1d1d1d;" class="title">ภาพยนตร์</h3>
+    </div> -->
+
+
+    <!-- <ion-row *ngFor="let spoiler of spoilers">
+      <ion-thumbnail>
+        <img [src]="spoiler.spoiler_img" />
+      </ion-thumbnail>
+      <ion-label [routerLink]="['/search-detail/', spoiler.spoilerID]">{{spoiler.spoiler_name}}</ion-label>
+    </ion-row> -->
+
+
+    <ion-card *ngFor="let spoiler of spoilers">
+      <ion-card-content>
+        <ion-list>
+            <ion-thumbnail slot="start">
+              <img [routerLink]="['/search-detail/', spoiler.spoilerID]" [src]="spoiler.spoiler_img"/>
+            </ion-thumbnail>
+            <ion-label [routerLink]="['/search-detail/', spoiler.spoilerID]">{{spoiler.spoiler_name}}</ion-label>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngFor="let videos of video">
+      <ion-card-content>
+        <ion-list>
+            <ion-thumbnail slot="start">
+              <img [routerLink]="['/search-detail-video/', videos.videosID]" [src]="videos.img"/>
+            </ion-thumbnail>
+            <ion-label [routerLink]="['/search-detail-video/', videos.videosID]">{{videos.name}}</ion-label>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- <ion-row *ngFor="let videos of video" style="margin-top: 10px;">
+      <ion-thumbnail>
+        <img [src]="videos.img" />
+      </ion-thumbnail>
+      <ion-label [routerLink]="['/search-detail-video/', videos.videosID]">{{videos.name}}</ion-label>
+    </ion-row> -->
+
+
+  <!-- <ion-button [routerLink]="['/list-spoiler']">list-spoiler</ion-button> -->
+  <br><br><br><br><br>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="tabs-user02" >
+      <ion-icon name="home-outline"></ion-icon>
+      <label style="font-size: 11.75px;">หน้าหลัก</label>
+    </ion-tab-button>
+    <!-- <ion-tab-button tab="review-user">
+      <ion-icon name="create-outline"></ion-icon>
+      <label style="font-size: 11.75px;">เขียนรีวิว</label>
+    </ion-tab-button> -->
+    <ion-tab-button tab="search-user">
+      <ion-icon name="search-outline"></ion-icon>
+      <label style="font-size: 11.75px;">ค้นหา</label>
+    </ion-tab-button>
+    <ion-tab-button id="present-alert" tab="profile-user">
+      <ion-icon name="person-outline"></ion-icon>
+      <label style="font-size: 11.75px;">บัญชี</label>
+    </ion-tab-button>
+    
+  </ion-tab-bar>
+</ion-tabs><ion-alert trigger="present-alert"  class="custom-alert" header="คุณยังไม่ได้สมัครสมาชิก คุณต้องการสมัครสมาชิกหรือไม่?"
+    [buttons]="alertButtons"></ion-alert>

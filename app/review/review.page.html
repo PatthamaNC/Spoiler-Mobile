@@ -1,0 +1,74 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+      rel="stylesheet" />
+  </ion-header>
+  <style>
+    .text-center {
+      text-align: center;
+    }
+  </style>
+  <div class="main">
+
+    <div class="user_div">
+      <ion-label id="EE">เพิ่มภาพยนตร์</ion-label>
+
+    </div>
+  </div>
+
+
+  <div class="content_div"><br><br>
+
+    <ion-label position="floating">ชื่อภาพยนตร์</ion-label>
+    <ion-input class="ion-input" placeholder="" [(ngModel)]="spoiler.spoiler_name"></ion-input><br>
+
+
+
+    <ion-label>ประเภทภาพยนตร์</ion-label>
+    <ion-select [(ngModel)]="spoiler.spoiler_category" label-placement="floating"   placeholder="">
+      <ion-select-option value="แอ็คชั่น">แอ็กชัน</ion-select-option>
+      <ion-select-option value="โรแมนติก">โรแมนติก</ion-select-option>
+      <ion-select-option value="การ์ตูน">การ์ตูน</ion-select-option>
+      <ion-select-option value="สยองขวัญ">สยองขวัญ</ion-select-option>
+    </ion-select>
+    <br>
+
+    <ion-label position="floating">นักแสดง</ion-label>
+    <ion-input class="ion-input" placeholder="" [(ngModel)]="spoiler.actor"></ion-input><br>
+
+    <ion-label position="floating">ผู้กำกับ</ion-label>
+    <ion-input class="ion-input" placeholder="" [(ngModel)]="spoiler.director"></ion-input><br>
+
+
+
+    <ion-label position="floating">เนื้อหาภาพยนตร์</ion-label>
+
+    <ion-textarea id="textarea" [(ngModel)]="spoiler.spoiler_details" [clearOnEdit]="true"></ion-textarea>
+
+    <br><br><br><br><br><br><br><br>
+
+
+
+    <ion-label>อัปโหลดรูปภาพ</ion-label>
+    <!-- <img id="imgggg" src="../assets/pic/Untitled-1.png"> *ngIf="spoiler.spoiler_img != null" -->
+
+    <ion-thumbnail>
+      <ion-img  (click)="selectImage()" [src]="spoiler.spoiler_img"></ion-img>
+      <ion-icon size="large" name="camera"></ion-icon>
+    </ion-thumbnail>
+    <br>
+
+
+    <ion-button  class="A" id="present-alertTT" shape="round" >อัปโหลด</ion-button><br><br>
+        <ion-alert
+            trigger="present-alertTT"
+            header="คุณต้องการเพิ่มภาพยนตร์สปอล์ใช่หรือไม่ ?"
+            [buttons]="alertButtonsSS"
+        ></ion-alert>
+<br><br><br><br>
+  </div>
+ 
+</ion-content>

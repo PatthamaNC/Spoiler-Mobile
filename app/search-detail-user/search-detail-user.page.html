@@ -1,0 +1,70 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>search-detail-user</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+
+  <ion-header collapse="condense">
+    <!-- <ion-icon size="large" name="chevron-back-outline" [routerLink]="['/tabs-user01/search-user']"></ion-icon> -->
+    <ion-icon id="icon_back"  name="chevron-back-outline" [routerLink]="['/tabs-user01/search-user']"></ion-icon>
+    <label [routerLink]="['/tabs-user01/search-user']" class="label_icon">ย้อนกลับ</label>
+   
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+      rel="stylesheet" />
+     <div class="ion-text-center" id="text04">{{spoiler.spoiler_name}}</div>
+
+
+    </ion-header>
+ 
+
+<ion-content >
+<br>
+  <ion-thumbnail id="thumbnail">
+    <ion-img [src]="spoiler.spoiler_img" ></ion-img>
+  </ion-thumbnail><br>
+
+  <!-- ข้อมูลผู้แัปโหลดงานสปอยล์ -->
+  <ion-avatar >
+    <ion-img id="img" [src]="spoiler.profile_pic"></ion-img>
+  </ion-avatar>
+  <ion-text id="text05">{{spoiler.username}}</ion-text><br><br>
+  
+  <!-- รายงานภาพยนตร์ -->
+  <!-- <ion-icon id="present-alert" class="icon-flag" size="large" name="flag-outline" ></ion-icon><br> -->
+
+  <ion-text id="text22">หมวดหมู่ : {{spoiler.spoiler_category}}</ion-text>
+  <ion-label  class="text" id="open-modal">ดูเพิ่มเติม...</ion-label><br>
+  
+ 
+<!-- (didDiamiss)="setReportSpoilerAlert(false)" -->
+  <!-- <ion-button id="open-modal" expand="block">Open Sheet Modal</ion-button> -->
+
+  <ion-text id="text03"> {{spoiler.spoiler_details}} </ion-text><br><br><br>
+  <ion-row *ngFor="let spoiler of spoilers"></ion-row>
+  <ion-modal #modal trigger="open-modal" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]">
+    <ng-template>
+      <ion-content><br>
+        <div class="ion-text-center"> <ion-label id="label02">ข้อมูลเพิ่มเติม</ion-label></div>
+
+        <ion-list lines="none">
+          <ion-item >
+            <ion-label id="label11">หมวดหมู่ : {{spoiler.spoiler_category}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label id="label11">นักแสดง : {{spoiler.actor}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label id="label11">ผู้กำกับ : {{spoiler.director}}</ion-label>
+          </ion-item>
+        </ion-list>
+
+
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  
+
+</ion-content>

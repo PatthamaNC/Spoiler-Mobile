@@ -1,0 +1,69 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+      rel="stylesheet" />
+  </ion-header>
+
+  <div class="main">
+    <div class="user_div">
+      <ion-label id="BB">ค้นหา</ion-label>
+    </div>
+  </div>
+
+  <div class="content_div">
+    <ion-searchbar  placeholder="ค้นหาภาพยนตร์ " (ionBlur)="handleIonBlur()"
+      (ionCancel)="handleIonCancel()" (ionChange)="handleIonChange()" (ionClear)="handleIonClear()"
+      (ionFocus)="handleIonFocus()" (ionInput)="handleIonInput($event)">
+    </ion-searchbar>
+<!-- 
+    <ion-row *ngFor="let spoiler of spoilers">
+
+      <ion-thumbnail>
+        <img [src]="spoiler.spoiler_img" />
+      </ion-thumbnail>
+      <ion-label [routerLink]="['/search-detail-user/', spoiler.spoilerID]">{{spoiler.spoiler_name}}</ion-label>
+    </ion-row> -->
+
+
+    <ion-card *ngFor="let spoiler of spoilers">
+      <ion-card-content>
+        <ion-list>
+            <ion-thumbnail slot="start">
+              <img [routerLink]="['/search-detail-user/', spoiler.spoilerID]" [src]="spoiler.spoiler_img"/>
+            </ion-thumbnail>
+            <ion-label [routerLink]="['/search-detail-user/', spoiler.spoilerID]">{{spoiler.spoiler_name}}</ion-label>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    <!-- <ion-row *ngFor="let videos of video">
+      <ion-col>
+        <ion-item>
+          <ion-label>
+            <ion-avatar>
+              <img [src]="videos.img" />
+              <h3 [routerLink]="['/search-detail-video/', videos.videosID]">{{videos.name}}</h3>
+            </ion-avatar>
+          </ion-label>          
+        </ion-item>
+      </ion-col>
+    </ion-row> -->
+
+  </div>
+  <br><br><br><br><br>
+</ion-content>
