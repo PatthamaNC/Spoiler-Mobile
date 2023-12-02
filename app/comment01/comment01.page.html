@@ -1,0 +1,69 @@
+
+<!-- <ion-header collapse="condense">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+    rel="stylesheet" />
+</ion-header> -->
+
+<!-- 
+<div class="ion-page" #page>
+  <ion-content  [fullscreen]="true" id="content">
+    <ion-header collapse="condense">
+      <ion-icon size="large" name="chevron-back-outline" [routerLink]="['/my-movies']"></ion-icon>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400&family=Prompt:wght@300&family=Sarabun:wght@200&display=swap"
+        rel="stylesheet" />
+    </ion-header>
+
+
+    <ion-text id="text04">{{spoiler.movie_name}}</ion-text>
+    <br><br>
+    <ion-thumbnail id="thumbnail">
+      <ion-img [src]="spoiler.movie_img"></ion-img>
+    </ion-thumbnail><br>
+
+    <ion-avatar id="profile" [routerLink]="['/profile-two']">
+      <ion-img id="img" [src]="member.profile_pic"></ion-img>
+    </ion-avatar>
+    <ion-text id="text05">{{member.username}}</ion-text><br><br>
+
+    <ion-text id="text22">หมวดหมู่ : {{spoiler.movie_genra}}</ion-text>
+
+    <ion-label class="text" id="open-modal">เพิ่มเติม</ion-label>
+    <ion-text id="text03"> {{spoiler.movie_subtitles}} </ion-text><br><br><br>
+
+    <ion-row *ngFor="let spoiler of spoilers"></ion-row>
+    <ion-button shape="round" id="button01"
+      [routerLink]="['/edit-my-movies01/',spoiler.movie_id]">แก้ไข</ion-button><br><br><br>
+    <ion-button shape="round" id="button02" >ความคิดเห็น</ion-button>
+
+    <ion-modal #modal trigger="open-modal" [canDismiss]="canDismiss" [presentingElement]="page">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar id="toolbar">{{spoiler.movie_name}}
+            <ion-buttons slot="end">
+              <ion-button id="text09" (click)="modal.dismiss()">ปิด</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          <p>
+            <ion-text id="text0"> หมวดหมู่ : {{spoiler.movie_genra}} </ion-text><br>
+            <ion-text id="text0">นักแสดง : {{spoiler.actor}}</ion-text><br>
+            <ion-text id="text0">ผู้กำกับ : {{spoiler.director}}</ion-text>
+
+          </p>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </ion-content>
+</div> -->
+<ion-content>
+  <ion-label>xyy</ion-label>
+
+</ion-content>
+
